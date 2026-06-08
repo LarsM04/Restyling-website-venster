@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venster Academy — Academie voor Illustratie & Narratief</title>
+  <meta name="description" content="Venster Academy biedt een levendig platform voor aspirant-illustratoren en verhalenvertellers om cursussen te verkennen, werk te tonen en in contact te komen met een creatieve community." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav" id="main-nav">
+      <div class="nav__inner">
+        <!-- Logo -->
+        <a href="index.html" class="nav__logo" aria-label="Venster Academy home">
+          <svg width="32" height="22" viewBox="0 0 32 22" fill="none" aria-hidden="true">
+            <ellipse cx="16" cy="11" rx="15" ry="10" fill="#F07830" />
+            <circle cx="16" cy="11" r="6" fill="#1a1a1a" />
+            <circle cx="18" cy="9" r="2.2" fill="#ffffff" />
+          </svg>
+          <span class="nav__logo-text">venster</span>
+        </a>
+
+        <!-- Desktop links -->
+        <div class="nav__links">
+          <a href="index.html" class="nav__link nav__link--active">Home</a>
+          <a href="trajecten.html" class="nav__link">Trajecten</a>
+          <a href="showcase.html" class="nav__link">Showcase</a>
+          <a href="blog.html" class="nav__link">Blog</a>
+          <a href="agenda.html" class="nav__link">Agenda</a>
+        </div>
+
+        <!-- Desktop controls -->
+        <div class="nav__controls">
+          <button class="nav__lang-btn" id="lang-toggle">NL | EN</button>
+          <button class="nav__icon-btn" aria-label="Winkelwagen">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </button>
+          <button class="nav__login-btn" aria-label="Inloggen">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>Inloggen</span>
+          </button>
+        </div>
+
+        <!-- Mobile hamburger -->
+        <button class="nav__hamburger" id="hamburger-btn" aria-label="Menu openen">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="hamburger-icon"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="close-icon" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="nav__mobile-menu" id="mobile-menu">
+        <a href="index.html" class="nav__mobile-link nav__mobile-link--active">Home</a>
+        <a href="trajecten.html" class="nav__mobile-link">Trajecten</a>
+        <a href="showcase.html" class="nav__mobile-link">Showcase</a>
+        <a href="blog.html" class="nav__mobile-link">Blog</a>
+        <a href="agenda.html" class="nav__mobile-link">Agenda</a>
+        <div class="nav__mobile-controls">
+          <button class="nav__lang-btn">NL | EN</button>
+          <button class="nav__icon-btn" aria-label="Winkelwagen">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </button>
+          <button class="nav__icon-btn" style="font-size:0.875rem;font-weight:700;display:flex;align-items:center;gap:0.25rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Inloggen
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__bg-img">
+          <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1600&h=900&fit=crop&auto=format" alt="" />
+        </div>
+        <div class="hero__blob-orange"></div>
+        <div class="hero__blob-mint"></div>
+
+        <div class="hero__inner">
+          <div>
+            <div class="hero__badge">Amsterdam · Illustratie · Narratief</div>
+            <h1 class="hero__title">
+              Academie voor<br />
+              <span>illustratie</span><br />
+              &amp; narratief
+            </h1>
+            <p class="hero__subtitle">
+              Vertel verhalen die blijven hangen. Bij Venster leer je zien, tekenen en vertellen op jouw manier.
+            </p>
+            <div class="hero__actions">
+              <a href="trajecten.html" class="btn btn--orange">
+                Bekijk trajecten
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="showcase.html" class="btn btn--ghost">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                Showcase alumni
+              </a>
+            </div>
+          </div>
+          <div class="hero__image-wrapper">
+            <div class="hero__image-card">
+              <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&h=1000&fit=crop&auto=format" alt="Studentenwerk — kleurrijke illustratie" />
+              <div class="hero__image-caption">
+                <p>🎨 Lena Bakker — Afstudeerwerk 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STUDENTENWERK MASONRY -->
+      <section class="section-padded">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-label" style="color: var(--venster-orange);">Studentenwerk</p>
+              <h2 class="section-title">Werk dat <span class="underline-accent">raakt</span></h2>
+            </div>
+            <a href="showcase.html" class="section-link">
+              Alle alumni
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+          <div class="masonry-grid">
+            <div class="masonry-grid__item">
+              <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500&h=650&fit=crop&auto=format" alt="Lena Bakker — Stadslandschappen" />
+              <div class="masonry-grid__overlay">
+                <p class="masonry-grid__name">Lena Bakker</p>
+                <p class="masonry-grid__project">Stadslandschappen</p>
+              </div>
+            </div>
+            <div class="masonry-grid__item">
+              <img src="https://images.unsplash.com/photo-1547826039-bdbee69ff3de?w=500&h=400&fit=crop&auto=format" alt="Daan Visser — Kinderboekillustratie" />
+              <div class="masonry-grid__overlay">
+                <p class="masonry-grid__name">Daan Visser</p>
+                <p class="masonry-grid__project">Kinderboekillustratie</p>
+              </div>
+            </div>
+            <div class="masonry-grid__item">
+              <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&h=560&fit=crop&auto=format" alt="Mila de Vries — Narratief portret" />
+              <div class="masonry-grid__overlay">
+                <p class="masonry-grid__name">Mila de Vries</p>
+                <p class="masonry-grid__project">Narratief portret</p>
+              </div>
+            </div>
+            <div class="masonry-grid__item">
+              <img src="https://images.unsplash.com/photo-1556139966-56785f998a76?w=500&h=480&fit=crop&auto=format" alt="Sven Hoekstra — Abstracte reeks" />
+              <div class="masonry-grid__overlay">
+                <p class="masonry-grid__name">Sven Hoekstra</p>
+                <p class="masonry-grid__project">Abstracte reeks</p>
+              </div>
+            </div>
+            <div class="masonry-grid__item">
+              <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=500&h=620&fit=crop&auto=format" alt="Anouk Smits — Grafisch verhaal" />
+              <div class="masonry-grid__overlay">
+                <p class="masonry-grid__name">Anouk Smits</p>
+                <p class="masonry-grid__project">Grafisch verhaal</p>
+              </div>
+            </div>
+            <div class="masonry-grid__item">
+              <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&h=400&fit=crop&auto=format" alt="Ruben Janssen — Botanische atlas" />
+              <div class="masonry-grid__overlay">
+                <p class="masonry-grid__name">Ruben Janssen</p>
+                <p class="masonry-grid__project">Botanische atlas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRAJECTEN / COURSES -->
+      <section class="section-padded section-bg-pink">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-label" style="color: var(--venster-blue);">Trajecten</p>
+              <h2 class="section-title">Jouw pad als maker</h2>
+            </div>
+            <a href="trajecten.html" class="btn btn--blue">
+              Alle trajecten
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+          <div class="card-grid card-grid--3">
+            <!-- Card 1 -->
+            <div class="course-card">
+              <div class="course-card__body">
+                <span class="course-card__tag">Opleiding</span>
+                <h3 class="course-card__title">Illustratie Opleiding</h3>
+                <p class="course-card__desc">Een intensieve 2-jarige opleiding tot professioneel illustrator.</p>
+                <p class="course-card__start">Start: September 2024</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="course-card">
+              <div class="course-card__body">
+                <span class="course-card__tag">Cursus</span>
+                <h3 class="course-card__title">Narratief Tekenen</h3>
+                <p class="course-card__desc">Leer verhalen vertellen met beeld in 10 weken.</p>
+                <p class="course-card__start">Start: Oktober 2024</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="course-card">
+              <div class="course-card__body">
+                <span class="course-card__tag">Workshop</span>
+                <h3 class="course-card__title">Karakterontwerp</h3>
+                <p class="course-card__desc">Van schets tot volledig uitgewerkt personage in 6 sessies.</p>
+                <p class="course-card__start">Start: November 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG TEASERS -->
+      <section class="section-padded">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-label" style="color: var(--venster-orange);">Blog</p>
+              <h2 class="section-title">Verhalen &amp; inspiratie</h2>
+            </div>
+            <a href="blog.html" class="section-link">
+              Naar het blog
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+          <div class="card-grid card-grid--3">
+            <article class="blog-card">
+              <div class="blog-card__image">
+                <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=700&h=394&fit=crop&auto=format" alt="Hoe illustratie je verhaal versterkt" />
+                <span class="blog-card__image-tag">Illustratie</span>
+              </div>
+              <div class="blog-card__body">
+                <h3 class="blog-card__title">Hoe illustratie je verhaal versterkt</h3>
+                <p class="blog-card__date">12 sep 2024</p>
+              </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-card__image">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&h=394&fit=crop&auto=format" alt="Alumni-interview: Mila de Vries over haar eerste boek" />
+                <span class="blog-card__image-tag">Verhalen</span>
+              </div>
+              <div class="blog-card__body">
+                <h3 class="blog-card__title">Alumni-interview: Mila de Vries over haar eerste boek</h3>
+                <p class="blog-card__date">5 sep 2024</p>
+              </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-card__image">
+                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=700&h=394&fit=crop&auto=format" alt="Agenda: Open Atelier Dag 2024" />
+                <span class="blog-card__image-tag">Agenda</span>
+              </div>
+              <div class="blog-card__body">
+                <h3 class="blog-card__title">Agenda: Open Atelier Dag 2024</h3>
+                <p class="blog-card__date">28 aug 2024</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIDEO / WEBINAR -->
+      <section class="webinar-section">
+        <div class="webinar-section__inner">
+          <div>
+            <p class="section-label" style="color: var(--venster-mint);">Webinar &amp; Events</p>
+            <h2 class="section-title" style="color: white; font-size: 2.25rem; margin-bottom: 1.25rem; line-height: 1.2;">
+              Leer van de <span style="color: var(--venster-orange);">besten</span>
+            </h2>
+            <p style="color: rgba(255,255,255,0.6); font-size: 0.875rem; line-height: 1.7; margin-bottom: 2rem; max-width: 24rem;">
+              Gratis en betaalde webinars met toonaangevende illustratoren en vertellers uit Nederland en België.
+            </p>
+            <a href="agenda.html" class="btn btn--blue">
+              Bekijk de agenda
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+          <div class="webinar-section__video">
+            <img src="https://images.unsplash.com/photo-1524601500432-1e1a4c71d692?w=800&h=450&fit=crop&auto=format" alt="Webinar bij Venster Academy" />
+            <div class="webinar-section__video-overlay">
+              <div class="webinar-section__play-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </div>
+            </div>
+            <div class="webinar-section__video-caption">
+              <p>🎙 Masterclass: "Uw verhaal als illustrator" — Elsbeth Groot</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter" id="newsletter-section">
+      <div class="newsletter__left">
+        <p class="section-label" style="color: white;">Nieuwsbrief</p>
+        <h2 style="color: white; font-size: 1.875rem; font-family: var(--font-display); font-weight: 900; line-height: 1.2;">Blijf op de hoogte</h2>
+        <p style="color: rgba(255,255,255,0.8); margin-top: 0.75rem; font-size: 0.875rem; max-width: 20rem;">
+          Ontvang nieuws over cursussen, events en studentenwerk rechtstreeks in je inbox.
+        </p>
+      </div>
+      <div class="newsletter__right" id="newsletter-right">
+        <div id="newsletter-form-wrapper">
+          <label for="newsletter-email" style="font-size: 0.875rem; margin-bottom: 0.5rem; display: block; font-family: var(--font-display); font-weight: 800; color: var(--venster-charcoal);">Jouw e-mailadres</label>
+          <form class="newsletter__form" id="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="naam@voorbeeld.nl" required class="newsletter__input" />
+            <button type="submit" class="newsletter__submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </form>
+          <p style="font-size: 0.75rem; margin-top: 0.75rem; color: rgba(45,45,45,0.6);">Je kunt je altijd afmelden. Geen spam, beloofd.</p>
+        </div>
+        <div id="newsletter-success" class="newsletter__success" style="display: none;">
+          <p style="font-size: 1.5rem; font-family: var(--font-display); font-weight: 900; color: var(--venster-blue);">Super, bedankt! 🎨</p>
+          <p style="font-size: 0.875rem; margin-top: 0.5rem; color: var(--venster-charcoal);">We sturen je snel het eerste nieuws.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__grid">
+          <!-- Col 1 -->
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.25rem;">
+              <svg width="28" height="20" viewBox="0 0 32 22" fill="none" aria-hidden="true">
+                <ellipse cx="16" cy="11" rx="15" ry="10" fill="#F07830" />
+                <circle cx="16" cy="11" r="6" fill="#1a1a1a" />
+                <circle cx="18" cy="9" r="2.2" fill="#ffffff" />
+              </svg>
+              <span style="color: white; text-transform: lowercase; font-family: var(--font-display); font-weight: 900; font-size: 1.1rem;">venster</span>
+            </div>
+            <p class="footer__text">
+              Venster Academy<br />
+              Keizersgracht 482<br />
+              1017 EG Amsterdam<br />
+              Nederland
+            </p>
+          </div>
+          <!-- Col 2 -->
+          <div>
+            <h4 class="footer__heading">Contact</h4>
+            <a href="mailto:hallo@vensteracademy.com" class="footer__link">hallo@vensteracademy.com</a>
+            <a href="tel:+31205551234" class="footer__link">+31 (0)20 555 12 34</a>
+            <p class="footer__text" style="margin-top: 0.5rem;">ma–vr 09:00–17:00</p>
+          </div>
+          <!-- Col 3 -->
+          <div>
+            <h4 class="footer__heading">Informatie</h4>
+            <a href="trajecten.html" class="footer__link">Opleidingen &amp; Cursussen</a>
+            <a href="showcase.html" class="footer__link">Showcase alumni</a>
+            <a href="blog.html" class="footer__link">Blog &amp; Verhalen</a>
+            <a href="agenda.html" class="footer__link">Agenda</a>
+            <a href="#" class="footer__link">Over Venster</a>
+            <a href="#" class="footer__link">Privacy &amp; Cookies</a>
+            <a href="#" class="footer__link">Algemene voorwaarden</a>
+          </div>
+          <!-- Col 4 -->
+          <div>
+            <h4 class="footer__heading">Volg ons</h4>
+            <div class="footer__socials">
+              <a href="#" class="footer__social-icon" aria-label="Instagram">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="footer__social-icon" aria-label="Facebook">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="footer__social-icon" aria-label="YouTube">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+              </a>
+              <a href="#" class="footer__social-icon" aria-label="LinkedIn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+            <p class="footer__legal">
+              © 2024 Venster Academy<br />
+              KvK: 12345678<br />
+              BTW: NL123456789B01
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script src="js/main.js"></script>
+</body>
+</html>

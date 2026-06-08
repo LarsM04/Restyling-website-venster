@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda — Venster Academy</title>
+  <meta name="description" content="Bekijk de agenda van Venster Academy: workshops, webinars, open dagen en tentoonstellingen." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- NAV -->
+    <nav class="nav" id="main-nav">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="Venster Academy home">
+          <svg width="32" height="22" viewBox="0 0 32 22" fill="none" aria-hidden="true"><ellipse cx="16" cy="11" rx="15" ry="10" fill="#F07830"/><circle cx="16" cy="11" r="6" fill="#1a1a1a"/><circle cx="18" cy="9" r="2.2" fill="#ffffff"/></svg>
+          <span class="nav__logo-text">venster</span>
+        </a>
+        <div class="nav__links">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="trajecten.html" class="nav__link">Trajecten</a>
+          <a href="showcase.html" class="nav__link">Showcase</a>
+          <a href="blog.html" class="nav__link">Blog</a>
+          <a href="agenda.html" class="nav__link nav__link--active">Agenda</a>
+        </div>
+        <div class="nav__controls">
+          <button class="nav__lang-btn" id="lang-toggle">NL | EN</button>
+          <button class="nav__icon-btn" aria-label="Winkelwagen"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+          <button class="nav__login-btn" aria-label="Inloggen"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Inloggen</span></button>
+        </div>
+        <button class="nav__hamburger" id="hamburger-btn" aria-label="Menu openen">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="hamburger-icon"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="close-icon" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="nav__mobile-menu" id="mobile-menu">
+        <a href="index.html" class="nav__mobile-link">Home</a>
+        <a href="trajecten.html" class="nav__mobile-link">Trajecten</a>
+        <a href="showcase.html" class="nav__mobile-link">Showcase</a>
+        <a href="blog.html" class="nav__mobile-link">Blog</a>
+        <a href="agenda.html" class="nav__mobile-link nav__mobile-link--active">Agenda</a>
+      </div>
+    </nav>
+
+    <main class="main-content">
+
+      <!-- HERO -->
+      <section class="page-hero">
+        <div class="container">
+          <p class="page-hero__label">Agenda</p>
+          <h1 class="page-hero__title">Wat staat er op de planning?</h1>
+          <p class="page-hero__desc">Workshops, webinars, open dagen en tentoonstellingen — alles wat er bij Venster speelt.</p>
+        </div>
+      </section>
+
+      <!-- MONTH NAV -->
+      <div class="month-nav">
+        <div class="month-nav__inner">
+          <button class="month-nav__btn" id="prev-month" aria-label="Vorige maand">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <h2 class="month-nav__label" id="month-label">September 2024</h2>
+          <button class="month-nav__btn" id="next-month" aria-label="Volgende maand">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- EVENTS LIST -->
+      <section style="padding: 3rem 1.5rem; max-width: 1280px; margin: 0 auto; min-height: 24rem;" id="events-container">
+        <!-- Events will be rendered by JavaScript -->
+      </section>
+    </main>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter" id="newsletter-section">
+      <div class="newsletter__left">
+        <p class="section-label" style="color: white;">Nieuwsbrief</p>
+        <h2 style="color: white; font-size: 1.875rem; font-family: var(--font-display); font-weight: 900; line-height: 1.2;">Blijf op de hoogte</h2>
+        <p style="color: rgba(255,255,255,0.8); margin-top: 0.75rem; font-size: 0.875rem; max-width: 20rem;">Ontvang nieuws over cursussen, events en studentenwerk rechtstreeks in je inbox.</p>
+      </div>
+      <div class="newsletter__right">
+        <div id="newsletter-form-wrapper">
+          <label for="newsletter-email" style="font-size: 0.875rem; margin-bottom: 0.5rem; display: block; font-family: var(--font-display); font-weight: 800; color: var(--venster-charcoal);">Jouw e-mailadres</label>
+          <form class="newsletter__form" id="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="naam@voorbeeld.nl" required class="newsletter__input" />
+            <button type="submit" class="newsletter__submit"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+          </form>
+          <p style="font-size: 0.75rem; margin-top: 0.75rem; color: rgba(45,45,45,0.6);">Je kunt je altijd afmelden. Geen spam, beloofd.</p>
+        </div>
+        <div id="newsletter-success" class="newsletter__success" style="display: none;">
+          <p style="font-size: 1.5rem; font-family: var(--font-display); font-weight: 900; color: var(--venster-blue);">Super, bedankt! 🎨</p>
+          <p style="font-size: 0.875rem; margin-top: 0.5rem; color: var(--venster-charcoal);">We sturen je snel het eerste nieuws.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__grid">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.25rem;">
+              <svg width="28" height="20" viewBox="0 0 32 22" fill="none"><ellipse cx="16" cy="11" rx="15" ry="10" fill="#F07830"/><circle cx="16" cy="11" r="6" fill="#1a1a1a"/><circle cx="18" cy="9" r="2.2" fill="#ffffff"/></svg>
+              <span style="color: white; text-transform: lowercase; font-family: var(--font-display); font-weight: 900; font-size: 1.1rem;">venster</span>
+            </div>
+            <p class="footer__text">Venster Academy<br/>Keizersgracht 482<br/>1017 EG Amsterdam<br/>Nederland</p>
+          </div>
+          <div>
+            <h4 class="footer__heading">Contact</h4>
+            <a href="mailto:hallo@vensteracademy.com" class="footer__link">hallo@vensteracademy.com</a>
+            <a href="tel:+31205551234" class="footer__link">+31 (0)20 555 12 34</a>
+            <p class="footer__text" style="margin-top: 0.5rem;">ma–vr 09:00–17:00</p>
+          </div>
+          <div>
+            <h4 class="footer__heading">Informatie</h4>
+            <a href="trajecten.html" class="footer__link">Opleidingen &amp; Cursussen</a>
+            <a href="showcase.html" class="footer__link">Showcase alumni</a>
+            <a href="blog.html" class="footer__link">Blog &amp; Verhalen</a>
+            <a href="agenda.html" class="footer__link">Agenda</a>
+          </div>
+          <div>
+            <h4 class="footer__heading">Volg ons</h4>
+            <div class="footer__socials">
+              <a href="#" class="footer__social-icon" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+              <a href="#" class="footer__social-icon" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="footer__social-icon" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+              <a href="#" class="footer__social-icon" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            </div>
+            <p class="footer__legal">© 2024 Venster Academy<br/>KvK: 12345678<br/>BTW: NL123456789B01</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // ===== AGENDA PAGE LOGIC =====
+    var months = ['Januari','Februari','Maart','April','Mei','Juni','Juli','Augustus','September','Oktober','November','December'];
+
+    var events = [
+      { id: 1, day: 13, month: 8, year: 2024, title: 'Open Atelier Dag', type: 'Event', location: 'Venster Academy, Amsterdam', time: '10:00 – 16:00', free: true },
+      { id: 2, day: 19, month: 8, year: 2024, title: 'Webinar: Urban Sketching als meditatie', type: 'Webinar', location: 'Online', time: '20:00 – 21:30', free: false },
+      { id: 3, day: 27, month: 8, year: 2024, title: 'Masterclass Kleur & Licht', type: 'Masterclass', location: 'Studio Noord, Amsterdam', time: '10:00 – 17:00', free: false },
+      { id: 4, day: 5, month: 9, year: 2024, title: 'Introductiedag Opleidingen', type: 'Introductie', location: 'Venster Academy, Amsterdam', time: '13:00 – 17:00', free: true },
+      { id: 5, day: 13, month: 9, year: 2024, title: 'Vernissage Tentoonstelling Venster Open 2024', type: 'Tentoonstelling', location: 'Keizersgracht 482, Amsterdam', time: '17:00 – 21:00', free: true },
+      { id: 6, day: 14, month: 9, year: 2024, title: 'Tentoonstelling: Venster Open 2024', type: 'Tentoonstelling', location: 'Keizersgracht 482, Amsterdam', time: '11:00 – 18:00', free: true },
+      { id: 7, day: 23, month: 9, year: 2024, title: 'Webinar: Narratief tekenen voor beginners', type: 'Webinar', location: 'Online', time: '20:00 – 21:30', free: false },
+      { id: 8, day: 3, month: 10, year: 2024, title: 'Start cursus Narratief Tekenen', type: 'Cursus', location: 'Venster Academy, Amsterdam', time: '19:00 – 21:30', free: false },
+      { id: 9, day: 17, month: 10, year: 2024, title: 'Gastlezing: Editoriaal illustreren', type: 'Lezing', location: 'Venster Academy, Amsterdam', time: '20:00 – 22:00', free: true }
+    ];
+
+    var typeColors = {
+      'Event': 'var(--venster-blue)',
+      'Webinar': 'var(--venster-mint)',
+      'Masterclass': 'var(--venster-orange)',
+      'Introductie': 'var(--venster-pink)',
+      'Tentoonstelling': '#9B59B6',
+      'Cursus': 'var(--venster-orange)',
+      'Lezing': 'var(--venster-charcoal)'
+    };
+
+    // Start at September 2024 to show events by default
+    var currentMonth = 8; // 0-indexed: 8 = September
+    var currentYear = 2024;
+
+    var monthLabel = document.getElementById('month-label');
+    var prevBtn = document.getElementById('prev-month');
+    var nextBtn = document.getElementById('next-month');
+    var container = document.getElementById('events-container');
+
+    function renderEvents() {
+      monthLabel.textContent = months[currentMonth] + ' ' + currentYear;
+
+      var filtered = events.filter(function (e) {
+        return (e.month - 1) === currentMonth && e.year === currentYear;
+      }).sort(function (a, b) { return a.day - b.day; });
+
+      if (filtered.length === 0) {
+        container.innerHTML =
+          '<div class="empty-state">' +
+            '<svg width="120" height="120" viewBox="0 0 120 120" fill="none">' +
+              '<circle cx="60" cy="60" r="55" fill="var(--muted)"/>' +
+              '<ellipse cx="60" cy="60" rx="32" ry="22" fill="var(--venster-orange)" opacity="0.3"/>' +
+              '<circle cx="60" cy="60" r="14" fill="var(--venster-orange)" opacity="0.6"/>' +
+              '<circle cx="65" cy="55" r="5" fill="white" opacity="0.9"/>' +
+              '<rect x="40" y="85" width="40" height="4" rx="2" fill="var(--venster-blue)" opacity="0.3"/>' +
+              '<rect x="50" y="93" width="20" height="4" rx="2" fill="var(--venster-blue)" opacity="0.2"/>' +
+            '</svg>' +
+            '<p class="empty-state__title">Geen events deze maand</p>' +
+            '<p class="empty-state__desc">Kijk een andere maand of schrijf je in voor de nieuwsbrief om niets te missen.</p>' +
+          '</div>';
+        return;
+      }
+
+      var html = '<div style="display: flex; flex-direction: column; gap: 1rem;">';
+
+      filtered.forEach(function (event) {
+        var badgeColor = typeColors[event.type] || 'var(--venster-blue)';
+        var monthShort = months[currentMonth].substring(0, 3);
+
+        html += '<div class="event-card">';
+        // Date block
+        html += '<div class="event-card__date">';
+        html += '<span class="event-card__day">' + event.day + '</span>';
+        html += '<span class="event-card__month">' + monthShort + '</span>';
+        html += '</div>';
+        // Info
+        html += '<div class="event-card__info">';
+        html += '<div style="flex:1;">';
+        // Badges
+        html += '<div class="event-card__badges">';
+        html += '<span class="event-card__badge" style="background:' + badgeColor + ';">' + event.type + '</span>';
+        if (event.free) {
+          html += '<span class="event-card__badge event-card__badge--free">Gratis</span>';
+        }
+        html += '</div>';
+        // Title
+        html += '<h3 class="event-card__title">' + event.title + '</h3>';
+        // Meta
+        html += '<div class="event-card__meta">';
+        html += '<span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> ' + event.location + '</span>';
+        html += '<span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ' + event.time + '</span>';
+        html += '</div>';
+        html += '</div>';
+        // Action button
+        html += '<div class="event-card__action"><button class="btn btn--blue" style="white-space:nowrap;">Meer info</button></div>';
+        html += '</div>';
+        html += '</div>';
+      });
+
+      html += '</div>';
+      container.innerHTML = html;
+    }
+
+    prevBtn.addEventListener('click', function () {
+      if (currentMonth === 0) {
+        currentMonth = 11;
+        currentYear--;
+      } else {
+        currentMonth--;
+      }
+      renderEvents();
+    });
+
+    nextBtn.addEventListener('click', function () {
+      if (currentMonth === 11) {
+        currentMonth = 0;
+        currentYear++;
+      } else {
+        currentMonth++;
+      }
+      renderEvents();
+    });
+
+    // Initial render
+    renderEvents();
+  </script>
+</body>
+</html>
