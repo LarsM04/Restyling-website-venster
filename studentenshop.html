@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studentenshop — Venster Academy</title>
+  <meta name="description" content="Shop workshops, cursussen, cadeaubonnen en exclusieve materialen van de Venster Academy." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- NAV -->
+    <nav class="nav" id="main-nav">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="Venster Academy home">
+          <svg width="32" height="22" viewBox="0 0 32 22" fill="none" aria-hidden="true">
+            <ellipse cx="16" cy="11" rx="15" ry="10" fill="#F07830"/>
+            <circle cx="16" cy="11" r="6" fill="#1a1a1a"/>
+            <circle cx="18" cy="9" r="2.2" fill="#ffffff"/>
+          </svg>
+          <span class="nav__logo-text">venster</span>
+        </a>
+        <div class="nav__links">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="trajecten.html" class="nav__link">Trajecten</a>
+          <a href="showcase.html" class="nav__link">Showcase</a>
+          <a href="blog.html" class="nav__link">Blog</a>
+          <a href="agenda.html" class="nav__link">Agenda</a>
+          <div class="nav__dropdown">
+            <button class="nav__link nav__dropdown-trigger">Studentenomgeving
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="nav__dropdown-menu">
+              <a href="leeromgeving.html" class="nav__dropdown-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                Online Leeromgeving
+              </a>
+              <a href="studentenshop.html" class="nav__dropdown-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                Studentenshop
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__controls">
+          <button class="nav__lang-btn" id="lang-toggle">NL | EN</button>
+          <button class="nav__icon-btn" aria-label="Winkelwagen">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </button>
+          <button class="nav__login-btn" aria-label="Inloggen">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>Inloggen</span>
+          </button>
+        </div>
+        <button class="nav__hamburger" id="hamburger-btn" aria-label="Menu openen">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="hamburger-icon"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="close-icon" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="nav__mobile-menu" id="mobile-menu">
+        <a href="index.html" class="nav__mobile-link">Home</a>
+        <a href="trajecten.html" class="nav__mobile-link">Trajecten</a>
+        <a href="showcase.html" class="nav__mobile-link">Showcase</a>
+        <a href="blog.html" class="nav__mobile-link">Blog</a>
+        <a href="agenda.html" class="nav__mobile-link">Agenda</a>
+        <div class="nav__mobile-dropdown">
+          <button class="nav__mobile-link nav__mobile-dropdown-trigger">Studentenomgeving
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav__mobile-dropdown-menu">
+            <a href="leeromgeving.html" class="nav__mobile-link nav__mobile-sublink">Online Leeromgeving</a>
+            <a href="studentenshop.html" class="nav__mobile-link nav__mobile-sublink">Studentenshop</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+
+      <!-- HERO -->
+      <section class="page-hero page-hero--orange">
+        <div class="container">
+          <p class="page-hero__label">Studentenshop</p>
+          <h1 class="page-hero__title">Alles voor de creatieve maker</h1>
+          <p class="page-hero__desc">Vind workshops, cursussen, cadeaubonnen en fysieke studiematerialen om je vaardigheden naar een hoger niveau te tillen.</p>
+        </div>
+      </section>
+
+      <!-- FILTER TABS -->
+      <div class="tabs-bar">
+        <div class="tabs-bar__inner" id="shop-filters">
+          <button class="tab-btn tab-btn--active" data-filter="all">Alles</button>
+          <button class="tab-btn" data-filter="workshops">Workshops &amp; Masterclasses</button>
+          <button class="tab-btn" data-filter="books">Boeken &amp; Materialen</button>
+          <button class="tab-btn" data-filter="courses">Cursussen &amp; Begeleiding</button>
+          <button class="tab-btn" data-filter="vouchers">Cadeaubonnen</button>
+        </div>
+      </div>
+
+      <!-- PRODUCTS SECTION -->
+      <section class="section-padded">
+        <div class="container">
+          <div class="product-grid" id="product-grid-container">
+            
+            <!-- VOUCHER 1 -->
+            <div class="product-card product-card--voucher" data-category="vouchers">
+              <div class="product-card__image">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg>
+                <div class="voucher-graphic">
+                  <div class="voucher-graphic__value">€15</div>
+                  <div class="voucher-graphic__label">Cadeaubon</div>
+                </div>
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Cadeaubon 15 Euro</h3>
+                <p class="product-card__desc">Geef creativiteit cadeau. Te besteden aan al onze workshops, lezingen en studiematerialen.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€15,00</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Cadeaubon 15 Euro')">In winkelwagen</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- VOUCHER 2 -->
+            <div class="product-card product-card--voucher" data-category="vouchers">
+              <div class="product-card__image">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg>
+                <div class="voucher-graphic">
+                  <div class="voucher-graphic__value">€25</div>
+                  <div class="voucher-graphic__label">Cadeaubon</div>
+                </div>
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Cadeaubon 25 Euro</h3>
+                <p class="product-card__desc">Het perfecte cadeau voor aspirant-illustratoren. Digitaal geleverd en onbeperkt geldig.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€25,00</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Cadeaubon 25 Euro')">In winkelwagen</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- VOUCHER 3 -->
+            <div class="product-card product-card--voucher" data-category="vouchers">
+              <div class="product-card__image">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg>
+                <div class="voucher-graphic">
+                  <div class="voucher-graphic__value">€50</div>
+                  <div class="voucher-graphic__label">Cadeaubon</div>
+                </div>
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Cadeaubon 50 Euro</h3>
+                <p class="product-card__desc">Geef een volledige masterclass cadeau! Direct in te wisselen bij de kassa.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€50,00</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Cadeaubon 50 Euro')">In winkelwagen</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- WORKSHOP 1 -->
+            <div class="product-card" data-category="workshops">
+              <div class="product-card__image">
+                <span class="product-card__tag">Workshop</span>
+                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=450&fit=crop&auto=format" alt="Workshop Monoprint" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Workshop Monoprint</h3>
+                <p class="product-card__desc">Ontdek de verrassende texturen van monoprinten. Inclusief alle verf, papier en gebruik van de drukpers. Zondag 4 maart.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€85,00</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Workshop Monoprint')">Boeken</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- WORKSHOP 2 -->
+            <div class="product-card" data-category="workshops">
+              <div class="product-card__image">
+                <span class="product-card__tag">Workshop</span>
+                <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&h=450&fit=crop&auto=format" alt="Monoprint Kennismaking" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Monoprint Kennismaking</h3>
+                <p class="product-card__desc">Een korte introductie-sessie tot de basisprincipes van monoprinten. Ideaal voor absolute beginners. Zondag 26 maart.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€45,00</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Monoprint Kennismaking')">Boeken</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- WORKSHOP 3 -->
+            <div class="product-card" data-category="workshops">
+              <div class="product-card__image">
+                <span class="product-card__tag">Masterclass</span>
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&h=450&fit=crop&auto=format" alt="Storytelling in Riso" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Storytelling in Riso</h3>
+                <p class="product-card__desc">Leer hoe je verhalen kunt vertellen met de unieke en levendige kleuren van de Risograph-printer. Zaterdag workshop.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€120,00</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Storytelling in Riso')">Boeken</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- COACHING 1 -->
+            <div class="product-card" data-category="courses">
+              <div class="product-card__image">
+                <span class="product-card__tag">Coaching</span>
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=450&fit=crop&auto=format" alt="Coaching sessions Visual Storytelling" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Coaching Sessions Visual Storytelling</h3>
+                <p class="product-card__desc">3 individuele feedback-sessies van 45 minuten om jouw lopende projecten naar een professioneel niveau te tillen.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€250,00</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Coaching Sessions')">Boeken</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- COACHING 2 -->
+            <div class="product-card" data-category="courses">
+              <div class="product-card__image">
+                <span class="product-card__tag">Portfolio Review</span>
+                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&h=450&fit=crop&auto=format" alt="Portfoliogesprek met Ellen Vesters" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Portfoliogesprek met Ellen Vesters</h3>
+                <p class="product-card__desc">Krijg direct bruikbare feedback, tips en carrièreadvies over jouw portfolio van gerenommeerd auteur Ellen Vesters.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€85,00</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Portfoliogesprek Ellen')">In winkelwagen</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- COURSE 1 -->
+            <div class="product-card" data-category="courses">
+              <div class="product-card__image">
+                <span class="product-card__tag">Cursus</span>
+                <img src="https://images.unsplash.com/photo-1547826039-bdbee69ff3de?w=600&h=450&fit=crop&auto=format" alt="Aanmelden Kleurenleer I" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Aanmelden Kleurenleer I</h3>
+                <p class="product-card__desc">Beheers de psychologie, theorie en praktische interactie van kleur in je illustraties. Cursus van 6 bijeenkomsten.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€320,00</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Aanmelden Kleurenleer I')">Boeken</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- COURSE 2 -->
+            <div class="product-card" data-category="courses">
+              <div class="product-card__image">
+                <span class="product-card__tag">Cursus</span>
+                <img src="https://images.unsplash.com/photo-1556139966-56785f998a76?w=600&h=450&fit=crop&auto=format" alt="Aanmelden Aquarel I" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Aanmelden Aquarel I</h3>
+                <p class="product-card__desc">Leer de wet-on-wet en wet-on-dry aquareltechnieken om transparantie, sfeer en textuur te creëren in je illustraties.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€340,00</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Aanmelden Aquarel I')">Boeken</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- COURSE 3 -->
+            <div class="product-card" data-category="courses">
+              <div class="product-card__image">
+                <span class="product-card__tag">Cursus</span>
+                <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=600&h=450&fit=crop&auto=format" alt="Aanmelden Perspectief" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Aanmelden Perspectief</h3>
+                <p class="product-card__desc">Leer correcte constructies bouwen in een- en tweepuntsperspectief om overtuigende stadsgezichten en interieurs te schetsen.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€310,00</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Aanmelden Perspectief')">Boeken</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- MATERIAL 1 -->
+            <div class="product-card" data-category="books">
+              <div class="product-card__image">
+                <span class="product-card__tag">Materialen</span>
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=450&fit=crop&auto=format" alt="A4 Sketchbook" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">A4 Portrait Black Cloth Hardback Sketchbook</h3>
+                <p class="product-card__desc">Premium kwaliteit schetsboek met zwaar zuurvrij papier (170g/m²). Uitstekend geschikt voor inkt, aquarel en mixed media.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€18,50</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('A4 Portrait Sketchbook')">In winkelwagen</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- BOOK 1 -->
+            <div class="product-card" data-category="books">
+              <div class="product-card__image">
+                <span class="product-card__tag">Boeken</span>
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&h=450&fit=crop&auto=format" alt="Tekst - Enne Koens" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Tekst — Enne Koens</h3>
+                <p class="product-card__desc">Een inspirerend geïllustreerd boek dat de wisselwerking tussen geschreven verhalen en krachtige beelden analyseert.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€22,50</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Tekst - Enne Koens')">In winkelwagen</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- BOOK 2 -->
+            <div class="product-card" data-category="books">
+              <div class="product-card__image">
+                <span class="product-card__tag">Boeken</span>
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&h=450&fit=crop&auto=format" alt="Sydney Smith" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Sydney Smith — Picturebook</h3>
+                <p class="product-card__desc">Bekroond prentenboek met paginagrote, sfeervolle illustraties in inkt en aquarel van gerenommeerd auteur Sydney Smith.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€24,95</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Sydney Smith Book')">In winkelwagen</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- BOOK 3 -->
+            <div class="product-card" data-category="books">
+              <div class="product-card__image">
+                <span class="product-card__tag">Art Zine</span>
+                <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=600&h=450&fit=crop&auto=format" alt="Pia Bramley" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Pia Bramley — Zine</h3>
+                <p class="product-card__desc">Een intiem en expressief zwart-wit getekend zine over alledaagse observaties en menselijke connectie.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€12,50</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Pia Bramley Zine')">In winkelwagen</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- BOOK 4 -->
+            <div class="product-card" data-category="books">
+              <div class="product-card__image">
+                <span class="product-card__tag">Boeken</span>
+                <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=600&h=450&fit=crop&auto=format" alt="Flavia Z Drago" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Flavia Z Drago — Book</h3>
+                <p class="product-card__desc">Een speels, felgekleurd prentenboek dat perfect laat zien hoe kleur en karakterontwerp samenhangen.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€19,99</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Flavia Z Drago Book')">In winkelwagen</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- BOOK 5 -->
+            <div class="product-card" data-category="books">
+              <div class="product-card__image">
+                <span class="product-card__tag">Boeken</span>
+                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=450&fit=crop&auto=format" alt="Lalala" />
+              </div>
+              <div class="product-card__content">
+                <h3 class="product-card__title">Lalala — Illustration Anthology</h3>
+                <p class="product-card__desc">Een bundel vol poëtische illustraties en verhalen over muziek, stilte en verbeelding van toonaangevende makers.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">€15,00</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Lalala Anthology')">In winkelwagen</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter" id="newsletter-section">
+      <div class="newsletter__left">
+        <p class="section-label" style="color: white;">Nieuwsbrief</p>
+        <h2 style="color: white; font-size: 1.875rem; font-family: var(--font-display); font-weight: 900; line-height: 1.2;">Blijf op de hoogte</h2>
+        <p style="color: rgba(255,255,255,0.8); margin-top: 0.75rem; font-size: 0.875rem; max-width: 20rem;">Ontvang nieuws over cursussen, events en studentenwerk rechtstreeks in je inbox.</p>
+      </div>
+      <div class="newsletter__right" id="newsletter-right">
+        <div id="newsletter-form-wrapper">
+          <label for="newsletter-email" style="font-size: 0.875rem; margin-bottom: 0.5rem; display: block; font-family: var(--font-display); font-weight: 800; color: var(--venster-charcoal);">Jouw e-mailadres</label>
+          <form class="newsletter__form" id="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="naam@voorbeeld.nl" required class="newsletter__input" />
+            <button type="submit" class="newsletter__submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </form>
+          <p style="font-size: 0.75rem; margin-top: 0.75rem; color: rgba(45,45,45,0.6);">Je kunt je altijd afmelden. Geen spam, beloofd.</p>
+        </div>
+        <div id="newsletter-success" class="newsletter__success" style="display: none;">
+          <p style="font-size: 1.5rem; font-family: var(--font-display); font-weight: 900; color: var(--venster-blue);">Super, bedankt! 🎨</p>
+          <p style="font-size: 0.875rem; margin-top: 0.5rem; color: var(--venster-charcoal);">We sturen je snel het eerste nieuws.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__grid">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.25rem;">
+              <svg width="28" height="20" viewBox="0 0 32 22" fill="none"><ellipse cx="16" cy="11" rx="15" ry="10" fill="#F07830"/><circle cx="16" cy="11" r="6" fill="#1a1a1a"/><circle cx="18" cy="9" r="2.2" fill="#ffffff"/></svg>
+              <span style="color: white; text-transform: lowercase; font-family: var(--font-display); font-weight: 900; font-size: 1.1rem;">venster</span>
+            </div>
+            <p class="footer__text">Venster Academy<br/>Keizersgracht 482<br/>1017 EG Amsterdam<br/>Nederland</p>
+          </div>
+          <div>
+            <h4 class="footer__heading">Contact</h4>
+            <a href="mailto:hallo@vensteracademy.com" class="footer__link">hallo@vensteracademy.com</a>
+            <a href="tel:+31205551234" class="footer__link">+31 (0)20 555 12 34</a>
+            <p class="footer__text" style="margin-top: 0.5rem;">ma–vr 09:00–17:00</p>
+          </div>
+          <div>
+            <h4 class="footer__heading">Informatie</h4>
+            <a href="trajecten.html" class="footer__link">Opleidingen &amp; Cursussen</a>
+            <a href="showcase.html" class="footer__link">Showcase alumni</a>
+            <a href="blog.html" class="footer__link">Blog &amp; Verhalen</a>
+            <a href="agenda.html" class="footer__link">Agenda</a>
+            <a href="leeromgeving.html" class="footer__link">Online Leeromgeving</a>
+            <a href="studentenshop.html" class="footer__link">Studentenshop</a>
+          </div>
+          <div>
+            <h4 class="footer__heading">Volg ons</h4>
+            <div class="footer__socials">
+              <a href="#" class="footer__social-icon" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+              <a href="#" class="footer__social-icon" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="footer__social-icon" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+              <a href="#" class="footer__social-icon" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            </div>
+            <p class="footer__legal">© 2024 Venster Academy<br/>KvK: 12345678<br/>BTW: NL123456789B01</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Product catalog filtering logic
+    document.querySelectorAll('#shop-filters .tab-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        // Active button visual toggle
+        document.querySelectorAll('#shop-filters .tab-btn').forEach(function (b) {
+          b.classList.remove('tab-btn--active');
+        });
+        btn.classList.add('tab-btn--active');
+
+        // Apply filters
+        var filterValue = btn.getAttribute('data-filter');
+        var products = document.querySelectorAll('.product-card');
+
+        products.forEach(function (product) {
+          if (filterValue === 'all') {
+            product.style.display = 'flex';
+          } else {
+            var category = product.getAttribute('data-category');
+            if (category === filterValue) {
+              product.style.display = 'flex';
+            } else {
+              product.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

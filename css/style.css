@@ -1698,3 +1698,436 @@ input {
   background: var(--venster-orange);
   vertical-align: middle;
 }
+
+/* ===== STUDENTENOMGEVING DROPDOWN & MENU ===== */
+.nav__dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav__dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+}
+
+.nav__dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: white;
+  min-width: 250px;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border: 1px solid var(--border);
+}
+
+.nav__dropdown:hover .nav__dropdown-menu,
+.nav__dropdown:focus-within .nav__dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.nav__dropdown-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--venster-charcoal);
+  transition: all 0.15s ease;
+  text-align: left;
+}
+
+.nav__dropdown-link:hover {
+  background: var(--muted);
+  color: var(--venster-blue);
+}
+
+.nav__dropdown-link svg {
+  color: var(--muted-foreground);
+  transition: color 0.15s;
+  flex-shrink: 0;
+}
+
+.nav__dropdown-link:hover svg {
+  color: var(--venster-blue);
+}
+
+/* Mobile Dropdown styles */
+.nav__mobile-dropdown {
+  width: 100%;
+}
+
+.nav__mobile-dropdown-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.5rem 0.75rem;
+}
+
+.nav__mobile-dropdown-trigger svg {
+  transition: transform 0.25s ease;
+}
+
+.nav__mobile-dropdown-menu {
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-left: 1rem;
+  margin-top: 0.25rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav__mobile-dropdown-menu.open {
+  display: flex;
+}
+
+.nav__mobile-sublink {
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ===== CART BADGE ===== */
+.nav__controls button[aria-label="Winkelwagen"],
+.nav__mobile-controls button[aria-label="Winkelwagen"] {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: var(--venster-orange);
+  color: white;
+  font-size: 0.65rem;
+  font-family: var(--font-display);
+  font-weight: 900;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--venster-blue);
+  line-height: 1;
+}
+
+.nav__mobile-controls .cart-badge {
+  border-color: var(--venster-pink);
+}
+
+/* ===== STUDENTENSHOP SPECIFIC STYLES ===== */
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.product-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.product-card__image {
+  position: relative;
+  aspect-ratio: 4/3;
+  background: var(--muted);
+  overflow: hidden;
+}
+
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-card__image img {
+  transform: scale(1.05);
+}
+
+.product-card__tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--venster-blue);
+  color: white;
+  font-size: 0.725rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  z-index: 5;
+}
+
+.product-card__content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-card__title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: var(--venster-charcoal);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.product-card__desc {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.product-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.product-card__price {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: var(--venster-blue);
+}
+
+/* Gift voucher styling */
+.product-card--voucher .product-card__image {
+  background: linear-gradient(135deg, var(--venster-orange) 0%, var(--venster-pink) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.product-card--voucher .product-card__image svg {
+  opacity: 0.25;
+  position: absolute;
+}
+
+.voucher-graphic {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-display);
+}
+
+.voucher-graphic__value {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.voucher-graphic__label {
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ===== ONLINE LEEROMGEVING STYLES ===== */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-card__title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Progress bar styling */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--muted);
+  border-radius: 9999px;
+  overflow: hidden;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.progress-bar__fill {
+  height: 100%;
+  background: var(--venster-blue);
+  border-radius: 9999px;
+  transition: width 0.5s ease-out;
+}
+
+.progress-bar__fill--orange {
+  background: var(--venster-orange);
+}
+
+/* List details */
+.dashboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dashboard-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: var(--background);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  gap: 1rem;
+}
+
+.dashboard-item__title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--venster-charcoal);
+}
+
+.dashboard-item__meta {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+  margin-top: 0.125rem;
+}
+
+/* Assignments panel styling */
+.assignment-card {
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background: white;
+  transition: border-color 0.2s;
+  margin-bottom: 1rem;
+}
+
+.assignment-card--success {
+  border-left: 4px solid var(--venster-mint);
+}
+
+.assignment-card--pending {
+  border-left: 4px solid var(--venster-orange);
+}
+
+.assignment-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.assignment-badge {
+  font-size: 0.7rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.assignment-badge--success {
+  background: rgba(61, 201, 154, 0.15);
+  color: var(--venster-mint);
+}
+
+.assignment-badge--pending {
+  background: rgba(240, 120, 48, 0.15);
+  color: var(--venster-orange);
+}
+
+.assignment-feedback {
+  background: var(--muted);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+  font-size: 0.825rem;
+  color: #555;
+  border-left: 2px solid var(--muted-foreground);
+}
+
+.assignment-upload-area {
+  border: 2px dashed var(--muted-foreground);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.assignment-upload-area:hover {
+  background: var(--muted);
+}
+
