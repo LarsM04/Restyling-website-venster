@@ -113,7 +113,7 @@ function StudentCard({ work }: { work: typeof studentWorks[0] }) {
       />
       <div
         className={`absolute inset-0 flex flex-col justify-end p-4 transition-opacity duration-300 ${hovered ? 'opacity-100' : 'opacity-0'}`}
-        style={{ background: 'linear-gradient(to top, rgba(43,43,245,0.85) 0%, transparent 60%)' }}
+        style={{ background: 'linear-gradient(to top, rgba(20,71,240,0.85) 0%, transparent 60%)' }}
       >
         <p
           className="text-white text-sm leading-tight"
@@ -205,7 +205,7 @@ export function HomePage() {
               />
               <div
                 className="absolute bottom-4 left-4 right-4 px-4 py-3 rounded-xl"
-                style={{ background: 'rgba(43,43,245,0.9)', backdropFilter: 'blur(12px)' }}
+                style={{ background: 'rgba(20,71,240,0.9)', backdropFilter: 'blur(12px)' }}
               >
                 <p className="text-white text-xs" style={{ fontFamily: 'var(--font-display)', fontWeight: 700 }}>
                   🎨 Lena Bakker — Afstudeerwerk 2024
@@ -425,7 +425,7 @@ export function HomePage() {
               alt="Webinar bij Venster Academy"
               className="w-full object-cover aspect-video transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 flex items-center justify-center" style={{ background: 'rgba(43,43,245,0.4)' }}>
+            <div className="absolute inset-0 flex items-center justify-center" style={{ background: 'rgba(20,71,240,0.4)' }}>
               <div
                 className="w-16 h-16 rounded-full flex items-center justify-center transition-all group-hover:scale-110"
                 style={{ background: 'var(--venster-orange)' }}

@@ -1,14 +1,6 @@
 import { Link } from 'react-router';
 import { Instagram, Facebook, Youtube, Linkedin } from 'lucide-react';
 
-const EyeIcon = () => (
-  <svg width="28" height="20" viewBox="0 0 32 22" fill="none" aria-hidden="true">
-    <ellipse cx="16" cy="11" rx="15" ry="10" fill="#F07830" />
-    <circle cx="16" cy="11" r="6" fill="#1a1a1a" />
-    <circle cx="18" cy="9" r="2.2" fill="#ffffff" />
-  </svg>
-);
-
 export function Footer() {
   return (
     <footer style={{ background: 'var(--venster-blue)', fontFamily: 'var(--font-body)' }}>
@@ -17,13 +9,7 @@ export function Footer() {
           {/* Column 1 — Address */}
           <div>
             <div className="flex items-center gap-2 mb-5">
-              <EyeIcon />
-              <span
-                className="text-white lowercase"
-                style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: '1.1rem' }}
-              >
-                venster
-              </span>
+              <img src="/assets/Klant huisstijl/wit-3c.png" alt="Venster Academy" style={{ height: '28px', width: 'auto' }} />
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
               Venster Academy<br />

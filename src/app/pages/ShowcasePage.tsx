@@ -38,7 +38,7 @@ function WorkCard({ work, onOpen }: { work: Work; onOpen: (w: Work) => void }) {
       />
       <div
         className={`absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-300 ${hovered ? 'opacity-100' : 'opacity-0'}`}
-        style={{ background: 'rgba(43,43,245,0.75)' }}
+        style={{ background: 'rgba(20,71,240,0.75)' }}
       >
         <ZoomIn size={32} className="text-white mb-2" />
         <p className="text-white text-sm" style={{ fontFamily: 'var(--font-display)', fontWeight: 900 }}>
@@ -132,11 +132,7 @@ export function ShowcasePage() {
               Een selectie van afstudeerwerken en projecten van onze studenten en alumni. Elk beeld vertelt een verhaal.
             </p>
             <div className="mt-6 flex items-center gap-3">
-              <svg width="28" height="20" viewBox="0 0 32 22" fill="none" aria-hidden="true">
-                <ellipse cx="16" cy="11" rx="15" ry="10" fill="#F07830" />
-                <circle cx="16" cy="11" r="6" fill="#1a1a1a" />
-                <circle cx="18" cy="9" r="2.2" fill="#ffffff" />
-              </svg>
+              <img src="/assets/Klant huisstijl/wit-3c.png" alt="Venster Academy" style={{ height: '24px', width: 'auto' }} />
               <Link
                 to="/trajecten"
                 className="inline-flex items-center gap-1.5 text-sm transition-colors hover:opacity-70"

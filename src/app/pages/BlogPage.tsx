@@ -142,7 +142,7 @@ export function BlogPage() {
               />
               <div
                 className="absolute inset-0"
-                style={{ background: 'linear-gradient(to right, rgba(43,43,245,0.85) 0%, rgba(43,43,245,0.3) 60%, transparent 100%)' }}
+                style={{ background: 'linear-gradient(to right, rgba(20,71,240,0.85) 0%, rgba(20,71,240,0.3) 60%, transparent 100%)' }}
               />
             </div>
             <div className="absolute inset-0 flex flex-col justify-end p-8 md:justify-center md:max-w-xl">

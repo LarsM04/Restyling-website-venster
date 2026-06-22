@@ -2,14 +2,6 @@ import { useState } from 'react';
 import { NavLink, Link } from 'react-router';
 import { ShoppingCart, User, Menu, X } from 'lucide-react';
 
-const EyeIcon = () => (
-  <svg width="32" height="22" viewBox="0 0 32 22" fill="none" aria-hidden="true">
-    <ellipse cx="16" cy="11" rx="15" ry="10" fill="#F07830" />
-    <circle cx="16" cy="11" r="6" fill="#1a1a1a" />
-    <circle cx="18" cy="9" r="2.2" fill="#ffffff" />
-  </svg>
-);
-
 const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/trajecten', label: 'Trajecten' },
@@ -35,13 +27,7 @@ export function Navigation() {
             className="flex items-center gap-2 shrink-0"
             aria-label="Venster Academy home"
           >
-            <EyeIcon />
-            <span
-              className="text-white lowercase tracking-tight"
-              style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: '1.25rem' }}
-            >
-              venster
-            </span>
+            <img src="/assets/Klant huisstijl/wit-3c.png" alt="Venster Academy" style={{ height: '28px', width: 'auto' }} />
           </Link>
 
           {/* Desktop nav links — centered */}
