@@ -20,14 +20,14 @@ export function Navigation() {
       style={{ background: 'var(--venster-blue)', fontFamily: 'var(--font-display)' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center h-16 gap-4">
+        <div className="flex items-center h-[72px] gap-4">
           {/* Logo */}
           <Link
             to="/"
             className="flex items-center gap-2 shrink-0"
             aria-label="Venster Academy home"
           >
-            <img src="/assets/Klant huisstijl/wit-3c.png" alt="Venster Academy" style={{ height: '28px', width: 'auto' }} />
+            <img src="/assets/Klant huisstijl/wit-3c.png" alt="Venster Academy" style={{ height: '48px', width: 'auto' }} />
           </Link>
 
           {/* Desktop nav links — centered */}

@@ -4,12 +4,12 @@ import { ArrowRight } from 'lucide-react';
 const categories = ['Alles', 'Agenda', 'Verhalen', 'Illustratie', 'Nieuws'];
 
 const bookshelItems = [
-  { id: 1, title: 'Hoe ik mijn eerste strip maakte', author: 'Joost van der Berg', img: 'https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=120&h=180&fit=crop&auto=format' },
-  { id: 2, title: 'Kleur als taal', author: 'Roos Dijkstra', img: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=120&h=180&fit=crop&auto=format' },
-  { id: 3, title: 'De stille lijn', author: 'Elsbeth Groot', img: 'https://images.unsplash.com/photo-1549122728-f519709caa9c?w=120&h=180&fit=crop&auto=format' },
-  { id: 4, title: 'Amsterdam in inkt', author: 'Daan Visser', img: 'https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=120&h=180&fit=crop&auto=format' },
-  { id: 5, title: 'Verhalen zonder woorden', author: 'Marc Hendricks', img: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=120&h=180&fit=crop&auto=format' },
-  { id: 6, title: 'Tekeningen als dagboek', author: 'Anouk Smits', img: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=120&h=180&fit=crop&auto=format' },
+  { id: 1, title: 'Het zwijgen van Jaap', author: 'Monique van Dongen', img: 'assets/2025/05/Het-zwijgen-van-Jaap-graphic-novel-door-Monique-van-Dongen-voor-de-opleiding-beeldverhaal-van-venster-academy-in-utrecht.png' },
+  { id: 2, title: 'Migratie: hoe werkt dat?', author: 'Erik van Tuijn & H. de Haas', img: 'assets/2025/05/Erik-van-Tuijn-en-Hein-de-Haas-Migratie-hoe-werkt-dat-eigenlijk-alumnus-van-Opleiding-Beeldverhaal-bij-Venster-Academy.png' },
+  { id: 3, title: 'Kom maar kipjes', author: 'Hilde Peters', img: 'assets/2025/05/prentenboek-kom-maar-kipjes-door-hilde-peters-afgestudeerd-bij-opleiding-beeldverhaal-door-venster-academy-in-utrecht.jpg' },
+  { id: 4, title: 'De man die met de wind vocht', author: 'Jettie Scholten', img: 'assets/2025/05/prentenboek-de-man-die-met-de-wind-vocht-door-jettie-scholten-afgestudeerd-bij-opleiding-beeldverhaal-door-venster-academy-in-utrecht.jpg' },
+  { id: 5, title: 'Een wolk om mij heen', author: 'Pascalle van Vliet', img: 'assets/2025/05/prentenboek-een-wolk-om-mij-heen-door-pascalle-van-vliet-cursus-prentenboeken-illustreren-door-venster-academy-in-utrecht.jpg' },
+  { id: 6, title: 'Een schat in de kast', author: 'Niek Schuil', img: 'assets/2025/05/kinderboek-een-schat-in-de-kast-door-niek-schuil-afgestudeerd-bij-opleiding-beeldverhaal-door-venster-academy-in-utrecht.jpg' },
 ];
 
 const featuredPost = {
@@ -19,16 +19,16 @@ const featuredPost = {
   date: '15 sep 2024',
   excerpt:
     'Elsbeth Groot werkt al meer dan twee decennia als illustrator en picturebook-maker. In dit uitgebreide interview vertelt ze over haar proces, haar inspiraties en waarom ze bij Venster les geeft.',
-  img: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=500&fit=crop&auto=format',
+  img: 'assets/2026/05/Boekenplank-met-gepubliceerde-boeken-van-alumni-van-de-opleiding-beeldverhaal-bij-Venster-Academy.jpg',
 };
 
 const posts = [
-  { id: 1, title: 'Hoe illustratie je verhaal versterkt', tag: 'Illustratie', date: '12 sep 2024', img: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&h=600&fit=crop&auto=format' },
-  { id: 2, title: 'Alumni-interview: Mila de Vries over haar eerste boek', tag: 'Verhalen', date: '5 sep 2024', img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=600&fit=crop&auto=format' },
-  { id: 3, title: 'Open Atelier Dag: alles wat je moet weten', tag: 'Agenda', date: '28 aug 2024', img: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&h=600&fit=crop&auto=format' },
-  { id: 4, title: 'Nieuwe cursus: Kleur & Compositie voor illustratoren', tag: 'Nieuws', date: '20 aug 2024', img: 'https://images.unsplash.com/photo-1547826039-bdbee69ff3de?w=600&h=600&fit=crop&auto=format' },
-  { id: 5, title: 'Waarom ieder verhaal een oogpunt nodig heeft', tag: 'Illustratie', date: '14 aug 2024', img: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&h=600&fit=crop&auto=format' },
-  { id: 6, title: 'Webinar terugblik: "Urban sketching als meditatie"', tag: 'Verhalen', date: '8 aug 2024', img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=600&fit=crop&auto=format' },
+  { id: 1, title: 'Hoe illustratie je verhaal versterkt', tag: 'Illustratie', date: '12 sep 2024', img: 'assets/2026/02/04-Zo-de-knetter-inzicht-Erik-van-Tuijn.png' },
+  { id: 2, title: 'Alumni-interview: Dieuwertje Gordijn over haar eerste boek', tag: 'Verhalen', date: '5 sep 2024', img: 'assets/2026/02/01-Wild-Rushes-Book-open.png' },
+  { id: 3, title: 'Open Atelier Dag: alles wat je moet weten', tag: 'Agenda', date: '28 aug 2024', img: 'assets/2026/05/venster05.jpg' },
+  { id: 4, title: 'Nieuwe cursus: Kleur & Compositie voor illustratoren', tag: 'Nieuws', date: '20 aug 2024', img: 'assets/2026/02/02-Zo-de-Knetter-Erik-van-Tuijn-.png' },
+  { id: 5, title: 'Waarom ieder verhaal een oogpunt nodig heeft', tag: 'Illustratie', date: '14 aug 2024', img: 'assets/2026/02/02-A-Black-Mirror-onheilsboden-Erik-van-Tuijn.png' },
+  { id: 6, title: 'Webinar terugblik: "Urban sketching als meditatie"', tag: 'Verhalen', date: '8 aug 2024', img: 'assets/2026/02/03-Kristalkoorts-verlaten-vuurtoren.png' },
 ];
 
 export function BlogPage() {

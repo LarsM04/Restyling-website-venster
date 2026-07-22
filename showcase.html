@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Showcase — Venster Academy</title>
   <meta name="description" content="Bekijk het werk van alumni en studenten van Venster Academy. Elk beeld vertelt een verhaal." />
-  <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -15,7 +15,7 @@
     <nav class="nav" id="main-nav">
       <div class="nav__inner">
         <a href="index.html" class="nav__logo" aria-label="Venster Academy home">
-          <img src="assets/Klant huisstijl/wit-3c.png" alt="Venster Academy" style="height: 28px; width: auto;" />
+          <img src="assets/Klant huisstijl/wit-3c.png" alt="Venster Academy" style="height: 48px; width: auto;" />
         </a>
         <div class="nav__links">
           <a href="index.html" class="nav__link">Home</a>
@@ -73,7 +73,7 @@
       <section class="showcase-intro">
         <div class="showcase-intro__grid">
           <div>
-            <p class="section-label" style="color: var(--venster-orange);">Alumni Showcase</p>
+            <p class="section-label" style="color: var(--venster-blue);">Alumni Showcase</p>
             <h1 class="section-title" style="font-size: 3rem; line-height: 1.1;">Werk dat spreekt</h1>
             <p style="margin-top: 1rem; font-size: 1rem; line-height: 1.7; max-width: 24rem; color: #555;">
               Een selectie van afstudeerwerken en projecten van onze studenten en alumni. Elk beeld vertelt een verhaal.
@@ -101,116 +101,122 @@
 
       <!-- YEAR FILTER -->
       <div style="padding: 0 1.5rem; max-width: 1280px; margin: 0 auto 2rem;">
-        <div class="filter-pills" id="year-filter">
-          <button class="filter-pill filter-pill--active" data-year="all">Alle jaren</button>
-          <button class="filter-pill" data-year="2024">2024</button>
-          <button class="filter-pill" data-year="2023">2023</button>
-          <button class="filter-pill" data-year="2022">2022</button>
-          <button class="filter-pill" data-year="2021">2021</button>
+        <div class="filter-pills" id="year-filter" style="display: flex; align-items: center; gap: 1rem; overflow-x: auto; padding-bottom: 0.5rem;">
+          <button class="filter-pill-img filter-pill-img--active" data-year="all" aria-label="Alle jaren">
+            <img src="assets/2026/02/showcase-button-knop.png" alt="Alle jaren" />
+          </button>
+          <button class="filter-pill-img" data-year="2024" aria-label="Jaar 2024">
+            <img src="assets/2026/02/showcase-button-knop-2425.png" alt="2024-2025" />
+          </button>
+          <button class="filter-pill-img" data-year="2023" aria-label="Jaar 2023">
+            <img src="assets/2025/02/Button-showcase-2324.png" alt="2023-2024" />
+          </button>
+          <button class="filter-pill-img" data-year="2022" aria-label="Jaar 2022">
+            <img src="assets/2025/02/Button-showcase-2223.png" alt="2022-2023" />
+          </button>
         </div>
       </div>
 
       <!-- MASONRY GRID -->
       <div style="padding: 0 1.5rem; max-width: 1280px; margin: 0 auto;" id="showcase-grid-wrapper">
         <div class="masonry-grid masonry-grid--4cols" id="showcase-grid">
-          <div class="masonry-grid__item" data-year="2024" data-name="Lena Bakker" data-project="Stadslandschappen">
-            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500&h=650&fit=crop&auto=format" alt="Lena Bakker — Stadslandschappen" />
+          <div class="masonry-grid__item" data-year="2024" data-name="Petra van der Ploeg" data-project="Tekstloos prentenboek">
+            <img src="assets/2026/01/petra-van-der-ploeg-tekstloos-prentenboek-voor-de-opleiding-beeldverhaal-bij-venster-academy-in-utrecht-1.png" alt="Petra van der Ploeg — Tekstloos prentenboek" />
             <div class="masonry-grid__overlay-center">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.5rem;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-              <p class="masonry-grid__name">Lena Bakker</p>
-              <p class="masonry-grid__project">Stadslandschappen</p>
+              <p class="masonry-grid__name">Petra van der Ploeg</p>
+              <p class="masonry-grid__project">Tekstloos prentenboek</p>
             </div>
-            <div class="masonry-grid__bottom-label"><p>Lena Bakker</p></div>
+            <div class="masonry-grid__bottom-label"><p>Petra van der Ploeg</p></div>
           </div>
-          <div class="masonry-grid__item" data-year="2024" data-name="Daan Visser" data-project="Kinderboekillustratie">
-            <img src="https://images.unsplash.com/photo-1547826039-bdbee69ff3de?w=500&h=400&fit=crop&auto=format" alt="Daan Visser — Kinderboekillustratie" />
+          <div class="masonry-grid__item" data-year="2024" data-name="Erik van Tuijn" data-project="Kristalkoorts">
+            <img src="assets/2026/02/01-Kristalkoorts-Bullrabbit-running-300dpi-20x30-1.png" alt="Erik van Tuijn — Kristalkoorts" />
             <div class="masonry-grid__overlay-center">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.5rem;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-              <p class="masonry-grid__name">Daan Visser</p>
-              <p class="masonry-grid__project">Kinderboekillustratie</p>
+              <p class="masonry-grid__name">Erik van Tuijn</p>
+              <p class="masonry-grid__project">Kristalkoorts</p>
             </div>
-            <div class="masonry-grid__bottom-label"><p>Daan Visser</p></div>
+            <div class="masonry-grid__bottom-label"><p>Erik van Tuijn</p></div>
           </div>
-          <div class="masonry-grid__item" data-year="2023" data-name="Mila de Vries" data-project="Narratief portret">
-            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&h=560&fit=crop&auto=format" alt="Mila de Vries — Narratief portret" />
+          <div class="masonry-grid__item" data-year="2023" data-name="Dieuwertje Gordijn" data-project="Gooi je artist block uit het venster">
+            <img src="assets/2026/01/Gooi-je-artist-block-en-beren-op-de-weg-uit-het-venster_afstudeeronderzoek-Dieuwertje-Gordijn-voor-de-Opleiding-Beeldverhaal-bij-Venster-Academie-voor-Illustratie-en-Narratief-in-Utrecht-1.png" alt="Dieuwertje Gordijn — Gooi je artist block uit het venster" />
             <div class="masonry-grid__overlay-center">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.5rem;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-              <p class="masonry-grid__name">Mila de Vries</p>
-              <p class="masonry-grid__project">Narratief portret</p>
+              <p class="masonry-grid__name">Dieuwertje Gordijn</p>
+              <p class="masonry-grid__project">Gooi je artist block uit het venster</p>
             </div>
-            <div class="masonry-grid__bottom-label"><p>Mila de Vries</p></div>
+            <div class="masonry-grid__bottom-label"><p>Dieuwertje Gordijn</p></div>
           </div>
-          <div class="masonry-grid__item" data-year="2023" data-name="Sven Hoekstra" data-project="Abstracte reeks">
-            <img src="https://images.unsplash.com/photo-1556139966-56785f998a76?w=500&h=400&fit=crop&auto=format" alt="Sven Hoekstra — Abstracte reeks" />
+          <div class="masonry-grid__item" data-year="2023" data-name="Jessamijn" data-project="Kat voor raam">
+            <img src="assets/2026/02/jessamijn_kat-voor-raam.png" alt="Jessamijn — Kat voor raam" />
             <div class="masonry-grid__overlay-center">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.5rem;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-              <p class="masonry-grid__name">Sven Hoekstra</p>
-              <p class="masonry-grid__project">Abstracte reeks</p>
+              <p class="masonry-grid__name">Jessamijn</p>
+              <p class="masonry-grid__project">Kat voor raam</p>
             </div>
-            <div class="masonry-grid__bottom-label"><p>Sven Hoekstra</p></div>
+            <div class="masonry-grid__bottom-label"><p>Jessamijn</p></div>
           </div>
-          <div class="masonry-grid__item" data-year="2023" data-name="Anouk Smits" data-project="Grafisch verhaal">
-            <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=500&h=620&fit=crop&auto=format" alt="Anouk Smits — Grafisch verhaal" />
+          <div class="masonry-grid__item" data-year="2023" data-name="Monique van Dongen" data-project="Knipsels">
+            <img src="assets/2026/02/Monique-knipsels.png" alt="Monique van Dongen — Knipsels" />
             <div class="masonry-grid__overlay-center">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.5rem;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-              <p class="masonry-grid__name">Anouk Smits</p>
-              <p class="masonry-grid__project">Grafisch verhaal</p>
+              <p class="masonry-grid__name">Monique van Dongen</p>
+              <p class="masonry-grid__project">Knipsels</p>
             </div>
-            <div class="masonry-grid__bottom-label"><p>Anouk Smits</p></div>
+            <div class="masonry-grid__bottom-label"><p>Monique van Dongen</p></div>
           </div>
-          <div class="masonry-grid__item" data-year="2022" data-name="Ruben Janssen" data-project="Botanische atlas">
-            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&h=380&fit=crop&auto=format" alt="Ruben Janssen — Botanische atlas" />
+          <div class="masonry-grid__item" data-year="2022" data-name="Fransje Immink" data-project="Meeuw">
+            <img src="assets/2026/02/meeuw-immink.png" alt="Fransje Immink — Meeuw" />
             <div class="masonry-grid__overlay-center">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.5rem;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-              <p class="masonry-grid__name">Ruben Janssen</p>
-              <p class="masonry-grid__project">Botanische atlas</p>
+              <p class="masonry-grid__name">Fransje Immink</p>
+              <p class="masonry-grid__project">Meeuw</p>
             </div>
-            <div class="masonry-grid__bottom-label"><p>Ruben Janssen</p></div>
+            <div class="masonry-grid__bottom-label"><p>Fransje Immink</p></div>
           </div>
-          <div class="masonry-grid__item" data-year="2022" data-name="Fleur van Dijk" data-project="Dagboek in kleur">
-            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=500&h=580&fit=crop&auto=format" alt="Fleur van Dijk — Dagboek in kleur" />
+          <div class="masonry-grid__item" data-year="2022" data-name="Petra van der Ploeg" data-project="Tekstloos prentenboek II">
+            <img src="assets/2026/01/petra-van-der-ploeg-tekstloos-prentenboek-voor-de-opleiding-beeldverhaal-bij-venster-academy-in-utrecht-2.png" alt="Petra van der Ploeg — Tekstloos prentenboek II" />
             <div class="masonry-grid__overlay-center">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.5rem;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-              <p class="masonry-grid__name">Fleur van Dijk</p>
-              <p class="masonry-grid__project">Dagboek in kleur</p>
+              <p class="masonry-grid__name">Petra van der Ploeg</p>
+              <p class="masonry-grid__project">Tekstloos prentenboek II</p>
             </div>
-            <div class="masonry-grid__bottom-label"><p>Fleur van Dijk</p></div>
+            <div class="masonry-grid__bottom-label"><p>Petra van der Ploeg</p></div>
           </div>
-          <div class="masonry-grid__item" data-year="2021" data-name="Boris Meijer" data-project="Urban sketching">
-            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=500&h=440&fit=crop&auto=format" alt="Boris Meijer — Urban sketching" />
+          <div class="masonry-grid__item" data-year="2021" data-name="Erik van Tuijn" data-project="Wild Rushes">
+            <img src="assets/2026/02/02-Wild-Rushes-full-image-web-ErikvanTuijn.png" alt="Erik van Tuijn — Wild Rushes" />
             <div class="masonry-grid__overlay-center">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.5rem;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-              <p class="masonry-grid__name">Boris Meijer</p>
-              <p class="masonry-grid__project">Urban sketching</p>
+              <p class="masonry-grid__name">Erik van Tuijn</p>
+              <p class="masonry-grid__project">Wild Rushes</p>
             </div>
-            <div class="masonry-grid__bottom-label"><p>Boris Meijer</p></div>
+            <div class="masonry-grid__bottom-label"><p>Erik van Tuijn</p></div>
           </div>
-          <div class="masonry-grid__item" data-year="2024" data-name="Tessa Hendriks" data-project="Zeildoek & gouache">
-            <img src="https://images.unsplash.com/photo-1541512416146-3cf58d6b27cc?w=500&h=500&fit=crop&auto=format" alt="Tessa Hendriks — Zeildoek & gouache" />
+          <div class="masonry-grid__item" data-year="2024" data-name="Erik van Tuijn" data-project="Zo de Knetter">
+            <img src="assets/2026/02/02-Zo-de-Knetter-Erik-van-Tuijn-.png" alt="Erik van Tuijn — Zo de Knetter" />
             <div class="masonry-grid__overlay-center">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.5rem;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-              <p class="masonry-grid__name">Tessa Hendriks</p>
-              <p class="masonry-grid__project">Zeildoek &amp; gouache</p>
+              <p class="masonry-grid__name">Erik van Tuijn</p>
+              <p class="masonry-grid__project">Zo de Knetter</p>
             </div>
-            <div class="masonry-grid__bottom-label"><p>Tessa Hendriks</p></div>
+            <div class="masonry-grid__bottom-label"><p>Erik van Tuijn</p></div>
           </div>
-          <div class="masonry-grid__item" data-year="2022" data-name="Pieter Koops" data-project="Zeeën van inkt">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=360&fit=crop&auto=format" alt="Pieter Koops — Zeeën van inkt" />
+          <div class="masonry-grid__item" data-year="2022" data-name="Erik van Tuijn" data-project="Black Mirror">
+            <img src="assets/2026/02/02-A-Black-Mirror-onheilsboden-Erik-van-Tuijn.png" alt="Erik van Tuijn — Black Mirror" />
             <div class="masonry-grid__overlay-center">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.5rem;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-              <p class="masonry-grid__name">Pieter Koops</p>
-              <p class="masonry-grid__project">Zeeën van inkt</p>
+              <p class="masonry-grid__name">Erik van Tuijn</p>
+              <p class="masonry-grid__project">Black Mirror</p>
             </div>
-            <div class="masonry-grid__bottom-label"><p>Pieter Koops</p></div>
+            <div class="masonry-grid__bottom-label"><p>Erik van Tuijn</p></div>
           </div>
         </div>
       </div>
 
       <!-- CTA -->
       <div style="padding: 3rem 1.5rem 5rem; max-width: 1280px; margin: 0 auto; text-align: center;">
-        <a href="trajecten.html" class="btn btn--blue">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-          Showcase alumni — start jouw traject
+        <a href="trajecten.html" class="btn-image-wrapper">
+          <img src="assets/2026/02/showcase-button-knop-alumni.png" alt="Showcase alumni — start jouw traject" class="btn-image" style="margin: 0 auto;" />
         </a>
       </div>
 
@@ -273,6 +279,11 @@
             <a href="showcase.html" class="footer__link">Showcase alumni</a>
             <a href="blog.html" class="footer__link">Blog &amp; Verhalen</a>
             <a href="agenda.html" class="footer__link">Agenda</a>
+            <a href="leeromgeving.html" class="footer__link">Online Leeromgeving</a>
+            <a href="studentenshop.html" class="footer__link">Studentenshop</a>
+            <a href="index.html#about-us" class="footer__link">Over Venster</a>
+            <a href="#" class="footer__link">Privacy &amp; Cookies</a>
+            <a href="#" class="footer__link">Algemene voorwaarden</a>
           </div>
           <div>
             <h4 class="footer__heading">Volg ons</h4>
@@ -292,13 +303,13 @@
   <script src="js/main.js"></script>
   <script>
     // Year filter
-    var filterBtns = document.querySelectorAll('#year-filter .filter-pill');
+    var filterBtns = document.querySelectorAll('#year-filter .filter-pill-img');
     var gridItems = document.querySelectorAll('#showcase-grid .masonry-grid__item');
 
     filterBtns.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        filterBtns.forEach(function (b) { b.classList.remove('filter-pill--active'); });
-        btn.classList.add('filter-pill--active');
+        filterBtns.forEach(function (b) { b.classList.remove('filter-pill-img--active'); });
+        btn.classList.add('filter-pill-img--active');
         var year = btn.getAttribute('data-year');
         gridItems.forEach(function (item) {
           if (year === 'all' || item.getAttribute('data-year') === year) {

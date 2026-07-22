@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Studentenshop — Venster Academy</title>
   <meta name="description" content="Shop workshops, cursussen, cadeaubonnen en exclusieve materialen van de Venster Academy." />
-  <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -15,7 +15,7 @@
     <nav class="nav" id="main-nav">
       <div class="nav__inner">
         <a href="index.html" class="nav__logo" aria-label="Venster Academy home">
-          <img src="assets/Klant huisstijl/wit-3c.png" alt="Venster Academy" style="height: 28px; width: auto;" />
+          <img src="assets/Klant huisstijl/wit-3c.png" alt="Venster Academy" style="height: 48px; width: auto;" />
         </a>
         <div class="nav__links">
           <a href="index.html" class="nav__link">Home</a>
@@ -75,7 +75,10 @@
     <main class="main-content">
 
       <!-- HERO -->
-      <section class="page-hero page-hero--orange">
+      <section class="page-hero page-hero--yellow-pattern">
+        <div class="page-hero__bg-banner">
+          <img src="assets/2022/04/Artboard-5@2x.png" alt="" aria-hidden="true" />
+        </div>
         <div class="container">
           <p class="page-hero__label">Studentenshop</p>
           <h1 class="page-hero__title">Alles voor de creatieve maker</h1>
@@ -85,12 +88,22 @@
 
       <!-- FILTER TABS -->
       <div class="tabs-bar">
-        <div class="tabs-bar__inner" id="shop-filters">
-          <button class="tab-btn tab-btn--active" data-filter="all">Alles</button>
-          <button class="tab-btn" data-filter="workshops">Workshops &amp; Masterclasses</button>
-          <button class="tab-btn" data-filter="books">Boeken &amp; Materialen</button>
-          <button class="tab-btn" data-filter="courses">Cursussen &amp; Begeleiding</button>
-          <button class="tab-btn" data-filter="vouchers">Cadeaubonnen</button>
+        <div class="tabs-bar__inner" id="shop-filters" style="display: flex; gap: 1rem; align-items: center; overflow-x: auto; padding-bottom: 0.5rem;">
+          <button class="tab-btn-img tab-btn-img--active" data-filter="all" aria-label="Alles">
+            <img src="assets/2013/01/WorkshopAanbod_alles.png" alt="Alles" />
+          </button>
+          <button class="tab-btn-img" data-filter="workshops" aria-label="Workshops & Masterclasses">
+            <img src="assets/2013/01/Illustratie_knop.png" alt="Workshops & Masterclasses" />
+          </button>
+          <button class="tab-btn-img" data-filter="books" aria-label="Boeken & Materialen">
+            <img src="assets/2013/01/Specials_knop.png" alt="Boeken & Materialen" />
+          </button>
+          <button class="tab-btn-img" data-filter="courses" aria-label="Cursussen & Begeleiding">
+            <img src="assets/2022/04/Cursussen_knop_transparant_apr-22.png" alt="Cursussen & Begeleiding" />
+          </button>
+          <button class="tab-btn-img" data-filter="vouchers" aria-label="Cadeaubonnen">
+            <img src="assets/2018/02/Kadobonnen_knop_strakker-gesneden.gif" alt="Cadeaubonnen" />
+          </button>
         </div>
       </div>
 
@@ -154,13 +167,11 @@
                   <button class="btn btn--blue" onclick="addItemToCart('Cadeaubon 50 Euro')">In winkelwagen</button>
                 </div>
               </div>
-            </div>
-
-            <!-- WORKSHOP 1 -->
+                  <!-- WORKSHOP 1 -->
             <div class="product-card" data-category="workshops">
               <div class="product-card__image">
                 <span class="product-card__tag">Workshop</span>
-                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=450&fit=crop&auto=format" alt="Workshop Monoprint" />
+                <img src="assets/2026/02/Bikkel1.jpg" alt="Workshop Monoprint cursistenwerk" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Workshop Monoprint</h3>
@@ -176,7 +187,7 @@
             <div class="product-card" data-category="workshops">
               <div class="product-card__image">
                 <span class="product-card__tag">Workshop</span>
-                <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&h=450&fit=crop&auto=format" alt="Monoprint Kennismaking" />
+                <img src="assets/2026/02/Bikkel3.jpg" alt="Monoprint Kennismaking cursistenwerk" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Monoprint Kennismaking</h3>
@@ -192,7 +203,7 @@
             <div class="product-card" data-category="workshops">
               <div class="product-card__image">
                 <span class="product-card__tag">Masterclass</span>
-                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&h=450&fit=crop&auto=format" alt="Storytelling in Riso" />
+                <img src="assets/2026/02/03-Zo-de-knetter-diverse-knarfjes-Erik-van-Tuijn.png" alt="Storytelling in Riso cursistenwerk" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Storytelling in Riso</h3>
@@ -208,7 +219,7 @@
             <div class="product-card" data-category="courses">
               <div class="product-card__image">
                 <span class="product-card__tag">Coaching</span>
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=450&fit=crop&auto=format" alt="Coaching sessions Visual Storytelling" />
+                <img src="assets/2026/05/venster06.jpg" alt="Coaching sessies Visual Storytelling sfeerfoto" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Coaching Sessions Visual Storytelling</h3>
@@ -224,7 +235,7 @@
             <div class="product-card" data-category="courses">
               <div class="product-card__image">
                 <span class="product-card__tag">Portfolio Review</span>
-                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&h=450&fit=crop&auto=format" alt="Portfoliogesprek met Ellen Vesters" />
+                <img src="assets/2026/02/foto.jpg" alt="Portfoliogesprek met Ellen Vesters" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Portfoliogesprek met Ellen Vesters</h3>
@@ -240,7 +251,7 @@
             <div class="product-card" data-category="courses">
               <div class="product-card__image">
                 <span class="product-card__tag">Cursus</span>
-                <img src="https://images.unsplash.com/photo-1547826039-bdbee69ff3de?w=600&h=450&fit=crop&auto=format" alt="Aanmelden Kleurenleer I" />
+                <img src="assets/2026/02/04-Zo-de-knetter-inzicht-Erik-van-Tuijn.png" alt="Aanmelden Kleurenleer I cursistenwerk" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Aanmelden Kleurenleer I</h3>
@@ -256,7 +267,7 @@
             <div class="product-card" data-category="courses">
               <div class="product-card__image">
                 <span class="product-card__tag">Cursus</span>
-                <img src="https://images.unsplash.com/photo-1556139966-56785f998a76?w=600&h=450&fit=crop&auto=format" alt="Aanmelden Aquarel I" />
+                <img src="assets/2026/02/02-Kristalkoorts-Sacha-op-de-vlucht.png" alt="Aanmelden Aquarel I cursistenwerk" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Aanmelden Aquarel I</h3>
@@ -272,7 +283,7 @@
             <div class="product-card" data-category="courses">
               <div class="product-card__image">
                 <span class="product-card__tag">Cursus</span>
-                <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=600&h=450&fit=crop&auto=format" alt="Aanmelden Perspectief" />
+                <img src="assets/2026/02/04-Kristalkoorts-blauwdruk-quistograaf.png" alt="Aanmelden Perspectief cursistenwerk" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">Aanmelden Perspectief</h3>
@@ -288,7 +299,7 @@
             <div class="product-card" data-category="books">
               <div class="product-card__image">
                 <span class="product-card__tag">Materialen</span>
-                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=450&fit=crop&auto=format" alt="A4 Sketchbook" />
+                <img src="assets/2026/02/Clarice-Cliff-1.jpg" alt="A4 Sketchbook productafbeelding" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
                 <h3 class="product-card__title">A4 Portrait Black Cloth Hardback Sketchbook</h3>
@@ -304,14 +315,14 @@
             <div class="product-card" data-category="books">
               <div class="product-card__image">
                 <span class="product-card__tag">Boeken</span>
-                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&h=450&fit=crop&auto=format" alt="Tekst - Enne Koens" />
+                <img src="assets/2025/05/Erik-van-Tuijn-en-Hein-de-Haas-Migratie-hoe-werkt-dat-eigenlijk-alumnus-van-Opleiding-Beeldverhaal-bij-Venster-Academy.png" alt="Migratie: hoe werkt dat eigenlijk? — Hein de Haas & Erik van Tuijn boekcover" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
-                <h3 class="product-card__title">Tekst — Enne Koens</h3>
-                <p class="product-card__desc">Een inspirerend geïllustreerd boek dat de wisselwerking tussen geschreven verhalen en krachtige beelden analyseert.</p>
+                <h3 class="product-card__title">Migratie: hoe werkt dat eigenlijk?</h3>
+                <p class="product-card__desc">Een helder geïllustreerd boek over hoe migratie werkt, getekend door Venster Academy alumnus Erik van Tuijn.</p>
                 <div class="product-card__footer">
-                  <span class="product-card__price">€22,50</span>
-                  <button class="btn btn--blue" onclick="addItemToCart('Tekst - Enne Koens')">In winkelwagen</button>
+                  <span class="product-card__price">€19,95</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Migratie')">In winkelwagen</button>
                 </div>
               </div>
             </div>
@@ -320,14 +331,14 @@
             <div class="product-card" data-category="books">
               <div class="product-card__image">
                 <span class="product-card__tag">Boeken</span>
-                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&h=450&fit=crop&auto=format" alt="Sydney Smith" />
+                <img src="assets/2025/05/Het-zwijgen-van-Jaap-graphic-novel-door-Monique-van-Dongen-voor-de-opleiding-beeldverhaal-van-venster-academy-in-utrecht.png" alt="Het zwijgen van Jaap — Monique van Dongen boekcover" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
-                <h3 class="product-card__title">Sydney Smith — Picturebook</h3>
-                <p class="product-card__desc">Bekroond prentenboek met paginagrote, sfeervolle illustraties in inkt en aquarel van gerenommeerd auteur Sydney Smith.</p>
+                <h3 class="product-card__title">Het zwijgen van Jaap</h3>
+                <p class="product-card__desc">Prachtige graphic novel getekend door Monique van Dongen als afstudeerproject voor de Opleiding Beeldverhaal.</p>
                 <div class="product-card__footer">
-                  <span class="product-card__price">€24,95</span>
-                  <button class="btn btn--blue" onclick="addItemToCart('Sydney Smith Book')">In winkelwagen</button>
+                  <span class="product-card__price">€24,50</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Het zwijgen van Jaap')">In winkelwagen</button>
                 </div>
               </div>
             </div>
@@ -335,15 +346,15 @@
             <!-- BOOK 3 -->
             <div class="product-card" data-category="books">
               <div class="product-card__image">
-                <span class="product-card__tag">Art Zine</span>
-                <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=600&h=450&fit=crop&auto=format" alt="Pia Bramley" />
+                <span class="product-card__tag">Prentenboek</span>
+                <img src="assets/2025/05/prentenboek-kom-maar-kipjes-door-hilde-peters-afgestudeerd-bij-opleiding-beeldverhaal-door-venster-academy-in-utrecht.jpg" alt="Kom maar kipjes — prentenboek door Hilde Peters" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
-                <h3 class="product-card__title">Pia Bramley — Zine</h3>
-                <p class="product-card__desc">Een intiem en expressief zwart-wit getekend zine over alledaagse observaties en menselijke connectie.</p>
+                <h3 class="product-card__title">Kom maar kipjes</h3>
+                <p class="product-card__desc">Een hartverwarmend prentenboek over avonturen met kippen, geschreven en getekend door alumnus Hilde Peters.</p>
                 <div class="product-card__footer">
-                  <span class="product-card__price">€12,50</span>
-                  <button class="btn btn--blue" onclick="addItemToCart('Pia Bramley Zine')">In winkelwagen</button>
+                  <span class="product-card__price">€14,95</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('Kom maar kipjes')">In winkelwagen</button>
                 </div>
               </div>
             </div>
@@ -351,15 +362,15 @@
             <!-- BOOK 4 -->
             <div class="product-card" data-category="books">
               <div class="product-card__image">
-                <span class="product-card__tag">Boeken</span>
-                <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=600&h=450&fit=crop&auto=format" alt="Flavia Z Drago" />
+                <span class="product-card__tag">Prentenboek</span>
+                <img src="assets/2025/05/prentenboek-de-man-die-met-de-wind-vocht-door-jettie-scholten-afgestudeerd-bij-opleiding-beeldverhaal-door-venster-academy-in-utrecht.jpg" alt="De man die met de wind vocht — prentenboek door Jettie Scholten" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
-                <h3 class="product-card__title">Flavia Z Drago — Book</h3>
-                <p class="product-card__desc">Een speels, felgekleurd prentenboek dat perfect laat zien hoe kleur en karakterontwerp samenhangen.</p>
+                <h3 class="product-card__title">De man die met de wind vocht</h3>
+                <p class="product-card__desc">Een poëtisch prentenboek over wind, dromen en verbeelding van afgestudeerd student Jettie Scholten.</p>
                 <div class="product-card__footer">
-                  <span class="product-card__price">€19,99</span>
-                  <button class="btn btn--blue" onclick="addItemToCart('Flavia Z Drago Book')">In winkelwagen</button>
+                  <span class="product-card__price">€16,95</span>
+                  <button class="btn btn--blue" onclick="addItemToCart('De man die met de wind vocht')">In winkelwagen</button>
                 </div>
               </div>
             </div>
@@ -367,15 +378,15 @@
             <!-- BOOK 5 -->
             <div class="product-card" data-category="books">
               <div class="product-card__image">
-                <span class="product-card__tag">Boeken</span>
-                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=450&fit=crop&auto=format" alt="Lalala" />
+                <span class="product-card__tag">Kinderboek</span>
+                <img src="assets/2025/05/kinderboek-een-schat-in-de-kast-door-niek-schuil-afgestudeerd-bij-opleiding-beeldverhaal-door-venster-academy-in-utrecht.jpg" alt="Een schat in de kast — kinderboek door Niek Schuil" style="max-width: 100%; height: auto;" />
               </div>
               <div class="product-card__content">
-                <h3 class="product-card__title">Lalala — Illustration Anthology</h3>
-                <p class="product-card__desc">Een bundel vol poëtische illustraties en verhalen over muziek, stilte en verbeelding van toonaangevende makers.</p>
+                <h3 class="product-card__title">Een schat in de kast</h3>
+                <p class="product-card__desc">Een grappig en spannend kinderboek over de avonturen in een geheimzinnige kast van Niek Schuil.</p>
                 <div class="product-card__footer">
                   <span class="product-card__price">€15,00</span>
-                  <button class="btn btn--blue" onclick="addItemToCart('Lalala Anthology')">In winkelwagen</button>
+                  <button class="btn btn--blue" onclick="addItemToCart('Een schat in de kast')">In winkelwagen</button>
                 </div>
               </div>
             </div>
@@ -435,6 +446,9 @@
             <a href="agenda.html" class="footer__link">Agenda</a>
             <a href="leeromgeving.html" class="footer__link">Online Leeromgeving</a>
             <a href="studentenshop.html" class="footer__link">Studentenshop</a>
+            <a href="index.html#about-us" class="footer__link">Over Venster</a>
+            <a href="#" class="footer__link">Privacy &amp; Cookies</a>
+            <a href="#" class="footer__link">Algemene voorwaarden</a>
           </div>
           <div>
             <h4 class="footer__heading">Volg ons</h4>
@@ -454,13 +468,13 @@
   <script src="js/main.js"></script>
   <script>
     // Product catalog filtering logic
-    document.querySelectorAll('#shop-filters .tab-btn').forEach(function (btn) {
+    document.querySelectorAll('#shop-filters .tab-btn-img').forEach(function (btn) {
       btn.addEventListener('click', function () {
         // Active button visual toggle
-        document.querySelectorAll('#shop-filters .tab-btn').forEach(function (b) {
-          b.classList.remove('tab-btn--active');
+        document.querySelectorAll('#shop-filters .tab-btn-img').forEach(function (b) {
+          b.classList.remove('tab-btn-img--active');
         });
-        btn.classList.add('tab-btn--active');
+        btn.classList.add('tab-btn-img--active');
 
         // Apply filters
         var filterValue = btn.getAttribute('data-filter');

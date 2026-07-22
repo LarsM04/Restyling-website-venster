@@ -56,7 +56,7 @@ export function Footer() {
                 { to: '/showcase', label: 'Showcase alumni' },
                 { to: '/blog', label: 'Blog & Verhalen' },
                 { to: '/agenda', label: 'Agenda' },
-                { to: '/', label: 'Over Venster' },
+                { to: '/#about-us', label: 'Over Venster' },
                 { to: '/', label: 'Privacy & Cookies' },
                 { to: '/', label: 'Algemene voorwaarden' },
               ].map((item) => (

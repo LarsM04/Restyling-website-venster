@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trajecten — Venster Academy</title>
   <meta name="description" content="Ontdek opleidingen, cursussen en persoonlijke mentortrajecten bij Venster Academy. Van korte workshop tot volledige opleiding." />
-  <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -15,7 +15,7 @@
     <nav class="nav" id="main-nav">
       <div class="nav__inner">
         <a href="index.html" class="nav__logo" aria-label="Venster Academy home">
-          <img src="assets/Klant huisstijl/wit-3c.png" alt="Venster Academy" style="height: 28px; width: auto;" />
+          <img src="assets/Klant huisstijl/wit-3c.png" alt="Venster Academy" style="height: 48px; width: auto;" />
         </a>
         <div class="nav__links">
           <a href="index.html" class="nav__link">Home</a>
@@ -70,7 +70,10 @@
     <main class="main-content">
 
       <!-- HERO -->
-      <section class="page-hero">
+      <section class="page-hero page-hero--pink-pattern">
+        <div class="page-hero__bg-banner">
+          <img src="assets/2023/11/Banner-afstudeerders_zonder-tekst.png" alt="" aria-hidden="true" />
+        </div>
         <div class="container">
           <p class="page-hero__label">Trajecten</p>
           <h1 class="page-hero__title">Vind jouw pad als maker</h1>
@@ -80,10 +83,16 @@
 
       <!-- TABS -->
       <div class="tabs-bar">
-        <div class="tabs-bar__inner">
-          <button class="tab-btn tab-btn--active" data-tab="opleidingen">Opleidingen</button>
-          <button class="tab-btn" data-tab="cursussen">Cursussen</button>
-          <button class="tab-btn" data-tab="een-op-een">Eén-op-één</button>
+        <div class="tabs-bar__inner" style="display: flex; gap: 1rem; align-items: center; overflow-x: auto; padding-bottom: 0.5rem;">
+          <button class="tab-btn-img tab-btn-img--active" data-tab="opleidingen" aria-label="Opleidingen">
+            <img src="assets/2022/04/Opleidingstrajecten_knop_transparant_apr-22.png" alt="Opleidingen" />
+          </button>
+          <button class="tab-btn-img" data-tab="cursussen" aria-label="Cursussen">
+            <img src="assets/2022/04/Cursussen_knop_transparant_apr-22.png" alt="Cursussen" />
+          </button>
+          <button class="tab-btn-img" data-tab="een-op-een" aria-label="Eén-op-één Begeleiding">
+            <img src="assets/2022/04/Een-op-een_knop_transparant_apr-22.png" alt="Eén-op-één" />
+          </button>
         </div>
       </div>
 
@@ -98,7 +107,7 @@
             <!-- Opleiding 1 -->
             <div class="course-card">
               <div class="course-card__image">
-                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=700&h=394&fit=crop&auto=format" alt="Illustratie Opleiding" />
+                <img src="assets/2026/01/petra-van-der-ploeg-tekstloos-prentenboek-voor-de-opleiding-beeldverhaal-bij-venster-academy-in-utrecht-5.png" alt="Illustratie Opleiding studentenwerk" style="max-width: 100%; height: auto;" />
                 <span class="course-card__image-tag">Opleiding</span>
               </div>
               <div class="course-card__body">
@@ -116,7 +125,7 @@
             <div class="course-card">
               <div class="course-card__sold-out-badge">VOLGENDE KEER BETER!</div>
               <div class="course-card__image">
-                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=700&h=394&fit=crop&auto=format" alt="Narratief & Beeldverhaal" />
+                <img src="assets/2026/02/01-Kristalkoorts-Bullrabbit-running-300dpi-20x30-1.png" alt="Narratief & Beeldverhaal studentenwerk" style="max-width: 100%; height: auto;" />
                 <span class="course-card__image-tag">Opleiding</span>
                 <div class="course-card__sold-out-overlay"></div>
               </div>
@@ -134,7 +143,7 @@
             <!-- Opleiding 3 -->
             <div class="course-card">
               <div class="course-card__image">
-                <img src="https://images.unsplash.com/photo-1547826039-bdbee69ff3de?w=700&h=394&fit=crop&auto=format" alt="Illustratie Opleiding Deeltijd" />
+                <img src="assets/2026/01/Gooi-je-artist-block-uit-het-venster_afstudeeronderzoek-Dieuwertje-Gordijn-voor-de-Opleiding-Beeldverhaal-bij-Venster-Academie-voor-Illustratie-en-Narratief-in-Utrecht.png" alt="Illustratie Opleiding Deeltijd studentenwerk" style="max-width: 100%; height: auto;" />
                 <span class="course-card__image-tag">Opleiding</span>
               </div>
               <div class="course-card__body">
@@ -158,11 +167,10 @@
           <div class="mb-10">
             <h2 class="section-title">Cursussen &amp; Workshops <span class="accent-bar"></span></h2>
             <p class="text-sm" style="color: var(--muted-foreground); margin-top: 0.5rem;">Kortere trajecten voor gerichte verdieping.</p>
-          </div>
-          <div class="card-grid card-grid--3">
+            <div class="card-grid card-grid--3">
             <div class="course-card">
               <div class="course-card__image">
-                <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=700&h=394&fit=crop&auto=format" alt="Narratief Tekenen" />
+                <img src="assets/2026/02/02-HdH-Migratie-intro-Erik-van-Tuijn-Blijstift.png" alt="Narratief Tekenen cursistenwerk" style="max-width: 100%; height: auto;" />
                 <span class="course-card__image-tag">Cursus</span>
               </div>
               <div class="course-card__body">
@@ -178,7 +186,7 @@
             </div>
             <div class="course-card">
               <div class="course-card__image">
-                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=700&h=394&fit=crop&auto=format" alt="Karakterontwerp Intensief" />
+                <img src="assets/2026/02/03-Zo-de-knetter-diverse-knarfjes-Erik-van-Tuijn.png" alt="Karakterontwerp cursistenwerk" style="max-width: 100%; height: auto;" />
                 <span class="course-card__image-tag">Workshop</span>
               </div>
               <div class="course-card__body">
@@ -195,7 +203,7 @@
             <div class="course-card">
               <div class="course-card__sold-out-badge">VOLGENDE KEER BETER!</div>
               <div class="course-card__image">
-                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=700&h=394&fit=crop&auto=format" alt="Kleur & Compositie" />
+                <img src="assets/2026/02/01-Wild-Rushes-Book-open.png" alt="Kleur & Compositie cursistenwerk" style="max-width: 100%; height: auto;" />
                 <span class="course-card__image-tag">Cursus</span>
                 <div class="course-card__sold-out-overlay"></div>
               </div>
@@ -211,6 +219,7 @@
               </div>
             </div>
           </div>
+          </div>
         </div>
       </section>
 
@@ -224,7 +233,7 @@
           <div class="card-grid card-grid--sm-2 card-grid--lg-4">
             <!-- Mentor 1 -->
             <div class="mentor-card">
-              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&auto=format" alt="Elsbeth Groot" class="mentor-card__avatar" />
+              <img src="assets/2026/02/Heidi-portretfoto.jpg" alt="Elsbeth Groot" class="mentor-card__avatar" style="max-width: 100%; height: auto;" />
               <h3 class="mentor-card__name">Elsbeth Groot</h3>
               <p class="mentor-card__specialty">Illustratie &amp; Picturebooks</p>
               <p class="mentor-card__bio">Meer dan 20 boeken gepubliceerd, docent aan de Rietveld Academie.</p>
@@ -232,7 +241,7 @@
             </div>
             <!-- Mentor 2 -->
             <div class="mentor-card">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&auto=format" alt="Joost van der Berg" class="mentor-card__avatar" />
+              <img src="assets/2026/02/Mugshot-Erik-kleur.png" alt="Joost van der Berg" class="mentor-card__avatar" style="max-width: 100%; height: auto;" />
               <h3 class="mentor-card__name">Joost van der Berg</h3>
               <p class="mentor-card__specialty">Grafisch Verhaal &amp; Strip</p>
               <p class="mentor-card__bio">Striptekenaar voor de Volkskrant en NRC, winnaar van de Stripschapsprijs 2022.</p>
@@ -240,7 +249,7 @@
             </div>
             <!-- Mentor 3 -->
             <div class="mentor-card">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&auto=format" alt="Roos Dijkstra" class="mentor-card__avatar" />
+              <img src="assets/2026/02/Foto-Netty.jpg" alt="Roos Dijkstra" class="mentor-card__avatar" style="max-width: 100%; height: auto;" />
               <h3 class="mentor-card__name">Roos Dijkstra</h3>
               <p class="mentor-card__specialty">Digitale Illustratie</p>
               <p class="mentor-card__bio">Art director bij VPRO, gespecialiseerd in editorial illustration en animatie.</p>
@@ -248,7 +257,7 @@
             </div>
             <!-- Mentor 4 -->
             <div class="mentor-card">
-              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&auto=format" alt="Marc Hendricks" class="mentor-card__avatar" />
+              <img src="assets/2026/02/Portret-voor-catalogus.jpg" alt="Marc Hendricks" class="mentor-card__avatar" style="max-width: 100%; height: auto;" />
               <h3 class="mentor-card__name">Marc Hendricks</h3>
               <p class="mentor-card__specialty">Narratief &amp; Conceptontwikkeling</p>
               <p class="mentor-card__bio">Auteur van drie graphic novels en docent bij diverse europese academies.</p>
@@ -274,9 +283,9 @@
               </div>
               <p class="testimonial-card__quote">"Venster heeft mijn ogen geopend voor wat illustratie écht kan zijn. Ik heb hier mijn stem gevonden."</p>
               <div class="testimonial-card__author">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&auto=format" alt="Anouk Smits" class="testimonial-card__avatar" />
+                <img src="assets/2026/02/Petronella-portret.jpg" alt="Petronella" class="testimonial-card__avatar" style="max-width: 100%; height: auto;" />
                 <div>
-                  <p class="testimonial-card__name">Anouk Smits</p>
+                  <p class="testimonial-card__name">Petronella</p>
                   <p class="testimonial-card__course">Illustratie Opleiding 2023</p>
                 </div>
               </div>
@@ -292,9 +301,9 @@
               </div>
               <p class="testimonial-card__quote">"De begeleiding is intens persoonlijk. Je groeit niet alleen als tekenaar maar ook als verteller."</p>
               <div class="testimonial-card__author">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&auto=format" alt="Daan Visser" class="testimonial-card__avatar" />
+                <img src="assets/2026/02/jessamijn_Profielfoto_72dpi.png" alt="Jessamijn" class="testimonial-card__avatar" style="max-width: 100%; height: auto;" />
                 <div>
-                  <p class="testimonial-card__name">Daan Visser</p>
+                  <p class="testimonial-card__name">Jessamijn</p>
                   <p class="testimonial-card__course">Narratief Tekenen 2023</p>
                 </div>
               </div>
@@ -310,9 +319,9 @@
               </div>
               <p class="testimonial-card__quote">"Twee jaar later heb ik al drie uitgeverijen benaderd en twee illustratie-opdrachten binnengehaald."</p>
               <div class="testimonial-card__author">
-                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=100&h=100&fit=crop&auto=format" alt="Lena Bakker" class="testimonial-card__avatar" />
+                <img src="assets/2026/02/portret-Dieuw.jpg" alt="Dieuwertje Gordijn" class="testimonial-card__avatar" style="max-width: 100%; height: auto;" />
                 <div>
-                  <p class="testimonial-card__name">Lena Bakker</p>
+                  <p class="testimonial-card__name">Dieuwertje Gordijn</p>
                   <p class="testimonial-card__course">Illustratie Opleiding 2022</p>
                 </div>
               </div>
@@ -375,6 +384,9 @@
             <a href="agenda.html" class="footer__link">Agenda</a>
             <a href="leeromgeving.html" class="footer__link">Online Leeromgeving</a>
             <a href="studentenshop.html" class="footer__link">Studentenshop</a>
+            <a href="index.html#about-us" class="footer__link">Over Venster</a>
+            <a href="#" class="footer__link">Privacy &amp; Cookies</a>
+            <a href="#" class="footer__link">Algemene voorwaarden</a>
           </div>
           <div>
             <h4 class="footer__heading">Volg ons</h4>
@@ -394,10 +406,10 @@
   <script src="js/main.js"></script>
   <script>
     // Tab switching
-    document.querySelectorAll('.tab-btn').forEach(function (btn) {
+    document.querySelectorAll('.tab-btn-img').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('tab-btn--active'); });
-        btn.classList.add('tab-btn--active');
+        document.querySelectorAll('.tab-btn-img').forEach(function (b) { b.classList.remove('tab-btn-img--active'); });
+        btn.classList.add('tab-btn-img--active');
         document.querySelectorAll('.tab-content').forEach(function (sec) { sec.style.display = 'none'; });
         var tabId = 'tab-' + btn.getAttribute('data-tab');
         document.getElementById(tabId).style.display = 'block';

@@ -1,49 +1,49 @@
 import { useState } from 'react';
 import { Link } from 'react-router';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
-import { ArrowRight, Play, Eye } from 'lucide-react';
+import { ArrowRight, Play, Eye, BookOpen, MapPin } from 'lucide-react';
 
 const studentWorks = [
   {
     id: 1,
-    name: 'Lena Bakker',
-    project: 'Stadslandschappen',
-    img: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500&h=650&fit=crop&auto=format',
+    name: 'Petra van der Ploeg',
+    project: 'Tekstloos prentenboek',
+    img: 'assets/2026/01/petra-van-der-ploeg-tekstloos-prentenboek-voor-de-opleiding-beeldverhaal-bij-venster-academy-in-utrecht-1.png',
     h: 'tall',
   },
   {
     id: 2,
-    name: 'Daan Visser',
-    project: 'Kinderboekillustratie',
-    img: 'https://images.unsplash.com/photo-1547826039-bdbee69ff3de?w=500&h=400&fit=crop&auto=format',
+    name: 'Erik van Tuijn',
+    project: 'Kristalkoorts',
+    img: 'assets/2026/02/01-Kristalkoorts-Bullrabbit-running-300dpi-20x30-1.png',
     h: 'short',
   },
   {
     id: 3,
-    name: 'Mila de Vries',
-    project: 'Narratief portret',
-    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&h=560&fit=crop&auto=format',
+    name: 'Dieuwertje Gordijn',
+    project: 'Gooi je artist block uit het venster',
+    img: 'assets/2026/01/Gooi-je-artist-block-en-beren-op-de-weg-uit-het-venster_afstudeeronderzoek-Dieuwertje-Gordijn-voor-de-Opleiding-Beeldverhaal-bij-Venster-Academie-voor-Illustratie-en-Narratief-in-Utrecht-1.png',
     h: 'medium',
   },
   {
     id: 4,
-    name: 'Sven Hoekstra',
-    project: 'Abstracte reeks',
-    img: 'https://images.unsplash.com/photo-1556139966-56785f998a76?w=500&h=480&fit=crop&auto=format',
+    name: 'Jessamijn',
+    project: 'Kat voor raam',
+    img: 'assets/2026/02/jessamijn_kat-voor-raam.png',
     h: 'medium',
   },
   {
     id: 5,
-    name: 'Anouk Smits',
-    project: 'Grafisch verhaal',
-    img: 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=500&h=620&fit=crop&auto=format',
+    name: 'Monique van Dongen',
+    project: 'Knipsels',
+    img: 'assets/2026/02/Monique-knipsels.png',
     h: 'tall',
   },
   {
     id: 6,
-    name: 'Ruben Janssen',
-    project: 'Botanische atlas',
-    img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&h=400&fit=crop&auto=format',
+    name: 'Fransje Immink',
+    project: 'Meeuw',
+    img: 'assets/2026/02/meeuw-immink.png',
     h: 'short',
   },
 ];
@@ -78,21 +78,21 @@ const blogCards = [
     title: 'Hoe illustratie je verhaal versterkt',
     tag: 'Illustratie',
     date: '12 sep 2024',
-    img: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=700&h=394&fit=crop&auto=format',
+    img: 'assets/2026/02/04-Zo-de-knetter-inzicht-Erik-van-Tuijn.png',
   },
   {
     id: 2,
-    title: 'Alumni-interview: Mila de Vries over haar eerste boek',
+    title: 'Alumni-interview: Erik van Tuijn over zijn eerste boek',
     tag: 'Verhalen',
     date: '5 sep 2024',
-    img: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&h=394&fit=crop&auto=format',
+    img: 'assets/2026/02/01-Wild-Rushes-Book-open.png',
   },
   {
     id: 3,
     title: 'Agenda: Open Atelier Dag 2024',
     tag: 'Agenda',
     date: '28 aug 2024',
-    img: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=700&h=394&fit=crop&auto=format',
+    img: 'assets/2026/05/venster05.jpg',
   },
 ];
 
@@ -137,8 +137,8 @@ export function HomePage() {
       >
         <div className="absolute inset-0 opacity-10">
           <img
-            src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1600&h=900&fit=crop&auto=format"
-            alt=""
+            src="assets/2026/05/venster04.jpg"
+            alt="Sfeerimpressie Venster Academy"
             className="w-full h-full object-cover"
           />
         </div>
@@ -180,16 +180,13 @@ export function HomePage() {
               </Link>
               <Link
                 to="/showcase"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg transition-all hover:scale-105"
-                style={{
-                  background: 'rgba(255,255,255,0.12)',
-                  color: 'white',
-                  border: '2px solid rgba(255,255,255,0.3)',
-                  fontFamily: 'var(--font-display)',
-                  fontWeight: 800,
-                }}
+                className="transition-all hover:scale-105 active:scale-95 shrink-0"
               >
-                <Eye size={18} /> Showcase alumni
+                <img
+                  src="assets/2026/01/showcase-alumni-button-knop.png"
+                  alt="Showcase alumni"
+                  style={{ height: '48px', width: 'auto', display: 'block' }}
+                />
               </Link>
             </div>
           </div>
@@ -199,8 +196,8 @@ export function HomePage() {
               style={{ borderRadius: '2rem', aspectRatio: '4/5', background: 'rgba(255,255,255,0.08)' }}
             >
               <img
-                src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&h=1000&fit=crop&auto=format"
-                alt="Studentenwerk — kleurrijke illustratie"
+                src="assets/2026/01/Gooi-je-artist-block-uit-het-venster_afstudeeronderzoek-Dieuwertje-Gordijn-voor-de-Opleiding-Beeldverhaal-bij-Venster-Academie-voor-Illustratie-en-Narratief-in-Utrecht.png"
+                alt="Studentenwerk — Dieuwertje Gordijn"
                 className="w-full h-full object-cover"
               />
               <div
@@ -208,7 +205,7 @@ export function HomePage() {
                 style={{ background: 'rgba(20,71,240,0.9)', backdropFilter: 'blur(12px)' }}
               >
                 <p className="text-white text-xs" style={{ fontFamily: 'var(--font-display)', fontWeight: 700 }}>
-                  🎨 Lena Bakker — Afstudeerwerk 2024
+                  🎨 Dieuwertje Gordijn — Afstudeerwerk 2024
                 </p>
               </div>
             </div>
@@ -247,10 +244,13 @@ export function HomePage() {
           </div>
           <Link
             to="/showcase"
-            className="inline-flex items-center gap-2 text-sm transition-colors hover:opacity-70"
-            style={{ color: 'var(--venster-blue)', fontFamily: 'var(--font-display)', fontWeight: 800 }}
+            className="transition-all hover:scale-105 active:scale-95 shrink-0"
           >
-            Alle alumni <ArrowRight size={16} />
+            <img
+              src="assets/2026/02/showcase-button-knop.png"
+              alt="Alle alumni"
+              style={{ height: '48px', width: 'auto', display: 'block' }}
+            />
           </Link>
         </div>
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 768: 3 }}>
@@ -260,6 +260,84 @@ export function HomePage() {
             ))}
           </Masonry>
         </ResponsiveMasonry>
+      </section>
+
+      {/* About Us / Over ons */}
+      <section className="py-24 px-6 max-w-7xl mx-auto" id="about-us">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-16 items-center">
+          <div>
+            <p
+              className="text-xs uppercase tracking-widest mb-2"
+              style={{ color: 'var(--venster-blue)', fontFamily: 'var(--font-display)', fontWeight: 800 }}
+            >
+              Over ons
+            </p>
+            <h2
+              className="text-4xl md:text-5xl leading-tight mb-6"
+              style={{ fontFamily: 'var(--font-display)', fontWeight: 900, color: 'var(--venster-charcoal)' }}
+            >
+              Kijk door het{' '}
+              <span
+                style={{
+                  borderBottom: '4px solid var(--venster-orange)',
+                  paddingBottom: '2px',
+                }}
+              >
+                venster
+              </span>{' '}
+              van verbeelding
+            </h2>
+            <p className="text-sm leading-relaxed mb-4 text-[#555]">
+              Venster Academy is een kleinschalige, inspirerende academie in hartje Amsterdam. Wij geloven dat een krachtig beeld meer zegt dan duizend woorden en dat elk verhaal het verdient om op een unieke manier verteld te worden.
+            </p>
+            <p className="text-sm leading-relaxed mb-8 text-[#555]">
+              Of je nu een beginnende illustrator bent die zijn eerste stappen zet, of een ervaren tekenaar die diepgang zoekt; bij ons vind je een warme, hechte community van docenten en medestudenten die je uitdagen en ondersteunen in jouw artistieke groei.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="flex gap-4">
+                <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'var(--venster-pink)', color: 'var(--venster-blue)' }}>
+                  <BookOpen size={20} />
+                </div>
+                <div>
+                  <h4 className="text-sm mb-1" style={{ fontFamily: 'var(--font-display)', fontWeight: 800, color: 'var(--venster-charcoal)' }}>Vakdocenten</h4>
+                  <p className="text-xs text-[#666] leading-relaxed">Leer direct van toonaangevende, actieve illustratoren en beeldverhalenmakers.</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'var(--venster-pink)', color: 'var(--venster-blue)' }}>
+                  <MapPin size={20} />
+                </div>
+                <div>
+                  <h4 className="text-sm mb-1" style={{ fontFamily: 'var(--font-display)', fontWeight: 800, color: 'var(--venster-charcoal)' }}>Inspirerende plek</h4>
+                  <p className="text-xs text-[#666] leading-relaxed">Ons sfeervolle atelier bevindt zich in een historisch pand aan de Keizersgracht.</p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-8">
+              <Link
+                to="/trajecten"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white transition-all hover:scale-105 active:scale-95"
+                style={{ background: 'var(--venster-blue)', fontFamily: 'var(--font-display)', fontWeight: 800 }}
+              >
+                Ontdek onze trajecten <ArrowRight size={18} />
+              </Link>
+            </div>
+          </div>
+          <div className="relative flex justify-center items-center py-8">
+            <div className="relative w-full max-w-[28rem] aspect-square group">
+              {/* Blob in background */}
+              <div className="absolute top-[10%] right-[10%] w-1/2 h-1/2 rounded-full opacity-35 transition-transform duration-500 group-hover:scale-105" style={{ background: 'var(--venster-mint)', zIndex: 1 }} />
+              {/* Main image card */}
+              <div className="absolute top-0 left-0 w-[75%] aspect-[4/5] rounded-3xl overflow-hidden shadow-xl z-10 transition-transform duration-300 group-hover:-translate-y-1 group-hover:-rotate-1">
+                <img src="assets/2026/05/venster02.jpg" alt="Atelier sfeer" className="w-full h-full object-cover" />
+              </div>
+              {/* Sub image card */}
+              <div className="absolute bottom-0 right-0 w-[60%] aspect-square rounded-3xl overflow-hidden shadow-xl z-20 border-[6px] border-white transition-transform duration-300 group-hover:translate-y-1 group-hover:scale-[1.02]">
+                <img src="assets/2026/05/venster01.jpg" alt="Studenten aan het werk" className="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Course teasers */}
@@ -421,8 +499,8 @@ export function HomePage() {
           </div>
           <div className="relative group cursor-pointer" style={{ borderRadius: '1rem', overflow: 'hidden' }}>
             <img
-              src="https://images.unsplash.com/photo-1524601500432-1e1a4c71d692?w=800&h=450&fit=crop&auto=format"
-              alt="Webinar bij Venster Academy"
+              src="assets/2026/05/venster03.jpg"
+              alt="Masterclass bij Venster Academy"
               className="w-full object-cover aspect-video transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 flex items-center justify-center" style={{ background: 'rgba(20,71,240,0.4)' }}>

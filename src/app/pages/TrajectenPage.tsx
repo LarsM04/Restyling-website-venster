@@ -9,7 +9,7 @@ const opleidingen = [
     duration: '2 jaar',
     date: 'Start september 2024',
     price: '€ 4.200 / jaar',
-    img: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=700&h=394&fit=crop&auto=format',
+    img: 'assets/2026/01/petra-van-der-ploeg-tekstloos-prentenboek-voor-de-opleiding-beeldverhaal-bij-venster-academy-in-utrecht-5.png',
     soldOut: false,
     desc: 'Een intensieve tweejarige opleiding tot professioneel illustrator. Van concept tot afwerking.',
   },
@@ -20,7 +20,7 @@ const opleidingen = [
     duration: '1 jaar',
     date: 'Start september 2024',
     price: '€ 3.100 / jaar',
-    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=700&h=394&fit=crop&auto=format',
+    img: 'assets/2026/02/01-Kristalkoorts-Bullrabbit-running-300dpi-20x30-1.png',
     soldOut: true,
     desc: 'Leer beeldverhalen maken die raken: strips, picturebooks, grafische novellen.',
   },
@@ -31,7 +31,7 @@ const opleidingen = [
     duration: '3 jaar',
     date: 'Start september 2024',
     price: '€ 2.800 / jaar',
-    img: 'https://images.unsplash.com/photo-1547826039-bdbee69ff3de?w=700&h=394&fit=crop&auto=format',
+    img: 'assets/2026/01/Gooi-je-artist-block-uit-het-venster_afstudeeronderzoek-Dieuwertje-Gordijn-voor-de-Opleiding-Beeldverhaal-bij-Venster-Academie-voor-Illustratie-en-Narratief-in-Utrecht.png',
     soldOut: false,
     desc: 'Dezelfde opleiding als voltijd, maar in eigen tempo — ideaal naast werk of gezin.',
   },
@@ -45,7 +45,7 @@ const cursussen = [
     duration: '10 weken',
     date: 'Start oktober 2024',
     price: '€ 890',
-    img: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=700&h=394&fit=crop&auto=format',
+    img: 'assets/2026/02/02-HdH-Migratie-intro-Erik-van-Tuijn-Blijstift.png',
     soldOut: false,
     desc: 'Leer verhalen vertellen met beeld in 10 woensdagavonden.',
   },
@@ -56,7 +56,7 @@ const cursussen = [
     duration: '6 sessies',
     date: 'Start november 2024',
     price: '€ 490',
-    img: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=700&h=394&fit=crop&auto=format',
+    img: 'assets/2026/02/03-Zo-de-knetter-diverse-knarfjes-Erik-van-Tuijn.png',
     soldOut: false,
     desc: 'Van schets tot volledig uitgewerkt personage met eigen stem en lichaamstaal.',
   },
@@ -67,7 +67,7 @@ const cursussen = [
     duration: '8 weken',
     date: 'Start oktober 2024',
     price: '€ 720',
-    img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=700&h=394&fit=crop&auto=format',
+    img: 'assets/2026/02/01-Wild-Rushes-Book-open.png',
     soldOut: true,
     desc: 'Beheers kleurtheorie en compositieprincipes voor illustratie en mixed media.',
   },
@@ -79,52 +79,52 @@ const mentors = [
     name: 'Elsbeth Groot',
     specialty: 'Illustratie & Picturebooks',
     bio: 'Meer dan 20 boeken gepubliceerd, docent aan de Rietveld Academie.',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&auto=format',
+    avatar: 'assets/2026/02/Heidi-portretfoto.jpg',
   },
   {
     id: 2,
     name: 'Joost van der Berg',
     specialty: 'Grafisch Verhaal & Strip',
     bio: 'Striptekenaar voor de Volkskrant en NRC, winnaar van de Stripschapsprijs 2022.',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&auto=format',
+    avatar: 'assets/2026/02/Mugshot-Erik-kleur.png',
   },
   {
     id: 3,
     name: 'Roos Dijkstra',
     specialty: 'Digitale Illustratie',
     bio: 'Art director bij VPRO, gespecialiseerd in editorial illustration en animatie.',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&auto=format',
+    avatar: 'assets/2026/02/Foto-Netty.jpg',
   },
   {
     id: 4,
     name: 'Marc Hendricks',
     specialty: 'Narratief & Conceptontwikkeling',
     bio: 'Auteur van drie graphic novels en docent bij diverse europese academies.',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&auto=format',
+    avatar: 'assets/2026/02/Portret-voor-catalogus.jpg',
   },
 ];
 
 const testimonials = [
   {
     id: 1,
-    name: 'Anouk Smits',
+    name: 'Petronella',
     course: 'Illustratie Opleiding 2023',
     quote: 'Venster heeft mijn ogen geopend voor wat illustratie écht kan zijn. Ik heb hier mijn stem gevonden.',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&auto=format',
+    avatar: 'assets/2026/02/Petronella-portret.jpg',
   },
   {
     id: 2,
-    name: 'Daan Visser',
+    name: 'Jessamijn',
     course: 'Narratief Tekenen 2023',
     quote: 'De begeleiding is intens persoonlijk. Je groeit niet alleen als tekenaar maar ook als verteller.',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&auto=format',
+    avatar: 'assets/2026/02/jessamijn_Profielfoto_72dpi.png',
   },
   {
     id: 3,
-    name: 'Lena Bakker',
+    name: 'Dieuwertje Gordijn',
     course: 'Illustratie Opleiding 2022',
     quote: 'Twee jaar later heb ik al drie uitgeverijen benaderd en twee illustratie-opdrachten binnengehaald.',
-    avatar: 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=100&h=100&fit=crop&auto=format',
+    avatar: 'assets/2026/02/portret-Dieuw.jpg',
   },
 ];
 
@@ -227,24 +227,19 @@ export function TrajectenPage() {
 
       {/* Section tabs */}
       <div className="sticky top-16 z-40 border-b" style={{ background: 'white', borderColor: 'var(--border)' }}>
-        <div className="max-w-7xl mx-auto px-6 flex gap-1 overflow-x-auto py-3">
+        <div className="max-w-7xl mx-auto px-6 flex gap-4 overflow-x-auto py-2 items-center">
           {([
-            { key: 'opleidingen', label: 'Opleidingen' },
-            { key: 'cursussen', label: 'Cursussen' },
-            { key: 'een-op-een', label: 'Eén-op-één' },
-          ] as const).map(({ key, label }) => (
+            { key: 'opleidingen', img: 'assets/2022/04/Opleidingstrajecten_knop_transparant_apr-22.png', alt: 'Opleidingen' },
+            { key: 'cursussen', img: 'assets/2022/04/Cursussen_knop_transparant_apr-22.png', alt: 'Cursussen' },
+            { key: 'een-op-een', img: 'assets/2022/04/Een-op-een_knop_transparant_apr-22.png', alt: 'Eén-op-één' },
+          ] as const).map(({ key, img, alt }) => (
             <button
               key={key}
               onClick={() => setActiveSection(key)}
-              className="px-5 py-2 rounded-lg text-sm whitespace-nowrap transition-all"
-              style={{
-                fontFamily: 'var(--font-display)',
-                fontWeight: 800,
-                background: activeSection === key ? 'var(--venster-blue)' : 'var(--muted)',
-                color: activeSection === key ? 'white' : 'var(--venster-charcoal)',
-              }}
+              className={`tab-btn-img ${activeSection === key ? 'tab-btn-img--active' : ''}`}
+              aria-label={alt}
             >
-              {label}
+              <img src={img} alt={alt} />
             </button>
           ))}
         </div>

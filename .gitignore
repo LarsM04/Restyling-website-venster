@@ -1,3 +1,6 @@
 node_modules/
 dist/
 .DS_Store
+
+# Large asset folders (yearly project photos - too large for GitHub)
+assets/20*/

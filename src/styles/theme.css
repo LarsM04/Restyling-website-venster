@@ -32,8 +32,10 @@
   --chart-5: #232323;
   --radius: 1rem;
   --venster-blue: #1447f0;
-  --venster-orange: #1447f0;
+  --venster-orange: #FA8C46;
   --venster-pink: #edd4e3;
+  --venster-pink-light: #fee5f4;
+  --venster-yellow: #F0D735;
   --venster-mint: #3DC99A;
   --venster-charcoal: #232323;
   --sidebar: oklch(0.985 0 0);
